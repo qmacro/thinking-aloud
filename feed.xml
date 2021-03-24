@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-24T14:50:55.564Z</updated>
+    <updated>2021-03-24T14:58:36.166Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -16,7 +16,7 @@
     <entry>
         <title type="html"><![CDATA[2021-03-24 10:55:54]]></title>
         <id>https://api.github.com/repos/qmacro/thinking-aloud/issues/1</id>
-        <link href="https://api.github.com/repos/qmacro/thinking-aloud/issues/1"/>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/1"/>
         <updated>2021-03-24T11:03:40.000Z</updated>
         <content type="html"><![CDATA[<p>Can't help overthinking what I should have as my first entry in this journal. Reminds me of the feeling of starting a new notebook, and agonising over what should be on the first page - it must be neat and permanently relevant. Of course, that's nonsense.</p>
 <p>So I thought I'd just start typing. After all, the idea of this journal is to allow me to record thoughts in as friction-free a way as possible. Part of that is having a low barrier to writing, but also a low filter threshold.</p>
