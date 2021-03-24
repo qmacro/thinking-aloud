@@ -11,6 +11,7 @@ jobs:
       uses: actions/checkout@v2.3.4
       
     - name: Setup Node.js environment
+      if: ${{ false }}
       uses: actions/setup-node@v2.1.5
       
     - uses: octokit/request-action@v2.0.26
@@ -21,12 +22,15 @@ jobs:
         repo: thinking-aloud
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-    - run: |
+  
+    - name: Install NPM modules
+      if: ${{ false }}
+      run: |
         npm install
         tree
 
     - uses: octokit/request-action@v2.0.26
+      if: ${{ false }}
       id: get_latest_release
       with:
         route: GET /repos/{owner}/{repo}/releases/latest
@@ -34,6 +38,8 @@ jobs:
         repo: request-action
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: |
-        echo latest release: 
-        echo ${{ steps.get_latest_release.outputs.data }}
+        
+    - name: Output
+      run: |
+        date
+        echo ${{ fromJSON(steps.get_latest_release.outputs.data) }}
