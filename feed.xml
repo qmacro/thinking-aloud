@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-24T16:00:46.001Z</updated>
+    <updated>2021-03-24T16:05:02.766Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -18,7 +18,7 @@
         <id>https://github.com/qmacro/thinking-aloud/issues/2</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/2"/>
         <updated>2021-03-24T16:00:34.000Z</updated>
-        <content type="html"><![CDATA[<p>So I've got the bare minimum set up for this journal, in the [thinking-aloud][thinking-aloud] repository:</p>
+        <content type="html"><![CDATA[<p>So I've got the bare minimum set up for this journal, in the <a href="https://github.com/qmacro/thinking-aloud">thinking-aloud</a> repository:</p>
 <ul>
 <li>issues to contain my journal entries, and possibly conversations about them (via the comments)</li>
 <li>a simple <a href="https://github.com/qmacro/thinking-aloud/blob/main/feed">Atom feed generator</a> that will build an Atom 1.0 feed from a JSON list of issues that I can retrieve from the GitHub API - the feed's URL is <a href="https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml">https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml</a></li>
