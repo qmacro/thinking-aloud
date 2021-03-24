@@ -1,6 +1,7 @@
 name: Generate Atom Feed
 on:
-  push:
+  issues:
+      types: [opened]
   workflow_dispatch:
 
 jobs:
