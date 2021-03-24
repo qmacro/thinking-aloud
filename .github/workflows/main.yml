@@ -22,4 +22,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-    - run: "echo latest release: ${{ steps.issues.outputs.data }}"
+    - run: |
+        ./feed <<< ${{ steps.issues.outputs.data }}
