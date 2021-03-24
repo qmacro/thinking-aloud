@@ -36,7 +36,7 @@ const feed = new Feed({
 issues.forEach(issue => {
   feed.addItem({
     title: issue.title,
-    id: issue.url,
+    id: issue.html_url,
     link: issue.html_url,
     content: converter.makeHtml(issue.body),
     author: author,
