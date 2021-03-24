@@ -1,0 +1,28 @@
+name: Tweet new entry
+on:
+  issues:
+      types: [opened]
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: self-hosted
+    steps:
+    
+      - name: Prepare tweet status
+        run: |
+          _status="$(echo \
+          "New 🧠 Thinking Aloud entry ${{ github.event.issue.title }} \
+          ($(echo ${{ github.event.issue.body }} | cut -c 1-60)…)\n\n \
+          ☞${{ github.event.issue.html_url }}" \
+          )"
+          echo "TA_STATUS=$_status" >> $GITHUB_ENV
+
+      - name: Construct and send tweet
+        uses: ethomson/send-tweet-action@v1
+        with:
+          status: "$TA_STATUS"
+          consumer-key: ${{ secrets.TWURL_CONSUMER_KEY }}
+          consumer-secret: ${{ secrets.TWURL_CONSUMER_SECRET }}
+          access-token: ${{ secrets.TWURL_TOKEN }}
+          access-token-secret: ${{ secrets.TWURL_SECRET }}
