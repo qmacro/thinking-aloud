@@ -16,13 +16,12 @@ jobs:
     - name: Install Node modules
       run: |
         npm install
-        env
 
     - name: Generate feed
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh api '/repos/qmacro-org/url-notes/issues?sort=created&direction=descending' \
+        gh api "/repos/${GITHUB_REPOSITORY}/issues?sort=created&direction=descending" \
           | ./feed \
           > feed.xml
 
