@@ -40,6 +40,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Output
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo ${{ fromJSON(steps.get_latest_release.outputs.data)[0].url }}
+        gh api /repos/qmacro/thinking-aloud/issues
 
