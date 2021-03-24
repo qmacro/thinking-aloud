@@ -16,11 +16,18 @@ jobs:
     - name: Install Node modules
       run: |
         npm install
+        env
 
     - name: Generate feed
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         gh api '/repos/qmacro-org/url-notes/issues?sort=created&direction=descending' \
-          | ./feed
+          | ./feed \
+          > feed.xml
 
+    - name: Commit any updates
+      run: |
+        git config --global user.email "qmacro@gmail.com"
+        git config --global user.name "DJ Adams"
+        git diff --exit-code feed.xml || git add feed.xml && git commit -m 'update feed' && git push
