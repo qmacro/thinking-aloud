@@ -1,0 +1,15 @@
+name: Generate Atom Feed
+on:
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v.2.3.4
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.1.5
+    - name: Generate feed
+      run: |
+        gh api '/repos/:owner/:repo/issues?sort=created&direction=desc'
