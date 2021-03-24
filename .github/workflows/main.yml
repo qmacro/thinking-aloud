@@ -12,7 +12,7 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
       
-    - uses: octokit/request-action@v2
+    - uses: octokit/request-action@v2.0.26
       id: issues
       with:
         route: GET /repos/{owner}/{repo}/issues?sort=created&direction=desc
