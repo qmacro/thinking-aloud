@@ -41,5 +41,5 @@ jobs:
         
     - name: Output
       run: |
-        date
+        echo ${{ fromJSON(steps.get_latest_release.outputs.data)[0].url }}
 
