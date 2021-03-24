@@ -8,8 +8,18 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2.3.4
+      
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
-    - name: Generate feed
-      run: |
-        gh api '/repos/:owner/:repo/issues?sort=created&direction=desc'
+      
+    - uses: octokit/request-action@v2
+      id: issues
+      with:
+        route: GET /repos/{owner}/{repo}/issues?sort=created&direction=desc
+        owner: qmacro
+        repo: thinking-aloud
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - run: |
+        jq . ${{ steps.issues.outputs.data }}"
