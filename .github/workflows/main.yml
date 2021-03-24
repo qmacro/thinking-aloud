@@ -16,7 +16,7 @@ jobs:
     - uses: octokit/request-action@v2.0.26
       id: issues
       with:
-        route: GET '/repos/{owner}/{repo}/issues?sort=created&direction=desc'
+        route: GET /repos/{owner}/{repo}/issues
         owner: qmacro
         repo: thinking-aloud
       env:
