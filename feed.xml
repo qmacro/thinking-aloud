@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-24T16:05:02.766Z</updated>
+    <updated>2021-03-24T16:06:03.025Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -26,7 +26,15 @@
 <li>a GitHub Actions <a href="https://github.com/qmacro/thinking-aloud/actions/workflows/generate-feed.yml">workflow</a> that is triggered when an issue is created or edited and causes the feed to be rebuilt</li>
 </ul>
 <p>This was a pleasant few hours messing around on a day off. Well, I say pleasant, there was one unpleasant part which was trying (and failing) to parse and use the output from the <a href="https://github.com/octokit/request-action">octokit/request-action</a>.</p>
-<p>The silver lining in this though is that I realised that I could just use the <code>gh</code> CLI, as long as I supply the <code>GITHUB_TOKEN</code> env var with the appropriate (and auto-generated) secret value, <a href="https://github.com/qmacro/thinking-aloud/blob/a8fda4c7705d26a30d47001885e6f20d4669a987/.github/workflows/generate-feed.yml#L21-L27">like this</a>.</p>
+<p>The silver lining in this though is that I realised that I could just use the <code>gh</code> CLI, as long as I supply the <code>GITHUB_TOKEN</code> env var with the appropriate (and auto-generated) secret value, <a href="https://github.com/qmacro/thinking-aloud/blob/a8fda4c7705d26a30d47001885e6f20d4669a987/.github/workflows/generate-feed.yml#L21-L27">like this</a>:</p>
+<pre><code class="yaml language-yaml">- name: Generate feed
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  run: |
+    gh api "/repos/${GITHUB_REPOSITORY}/issues?sort=created&amp;direction=descending" \
+      | ./feed \
+      | tee feed.xml
+</code></pre>
 <p>If you're interested in following these journal entries, add the feed URL to your favourite feed reader: <a href="https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml">https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml</a>, and if you want to comment on any of the entries, you can do so in the comments to the corresponding issue.</p>]]></content>
     </entry>
     <entry>
