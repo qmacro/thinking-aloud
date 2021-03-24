@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/qmacro/thinking-aloud</id>
+    <title>Thinking Aloud</title>
+    <updated>2021-03-24T14:48:14.854Z</updated>
+    <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
+    <author>
+        <name>DJ Adams</name>
+        <email>qmacro@gmail.com</email>
+        <uri>https://github.com/qmacro</uri>
+    </author>
+    <link rel="alternate" href="https://github.com/qmacro/thinking-aloud"/>
+    <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
+    <subtitle>A journal</subtitle>
+    <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[Scripting with GitHub CLI - The GitHub Blog]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/44</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/44"/>
+        <updated>2021-03-24T14:01:27.000Z</updated>
+        <content type="html"><![CDATA[<p>https://github.blog/2021-03-11-scripting-with-github-cli/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[acco.io | I finally escaped Node (and you can too)]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/43</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/43"/>
+        <updated>2021-03-24T05:11:09.000Z</updated>
+        <content type="html"><![CDATA[<p>https://acco.io/i-escaped-node</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Choosing a language to replace Javascript (and why it's F#) - theor's]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/41</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/41"/>
+        <updated>2021-03-23T07:34:49.000Z</updated>
+        <content type="html"><![CDATA[<p>https://theor.xyz/posts/tech-stack-graph-unicode-fsharp/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Don't End The Week With Nothing]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/40</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/40"/>
+        <updated>2021-03-22T13:13:13.000Z</updated>
+        <content type="html"><![CDATA[<p>https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Migrating from LastPass to pass – Zoned Out]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/39</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/39"/>
+        <updated>2021-03-21T06:31:09.000Z</updated>
+        <content type="html"><![CDATA[<p>https://rhardih.io/2021/03/migrating-from-lastpass-to-pass/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Edward Thomson: GitHub Actions Day 21: GitHub Script]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/38</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/38"/>
+        <updated>2021-03-18T17:42:13.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.edwardthomson.com/blog/github<em>actions</em>21<em>github</em>script.html</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Senior Engineers Hate Coding Interviews | by Adam Storm | The Startup | Medium]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/37</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/37"/>
+        <updated>2021-03-16T17:45:56.000Z</updated>
+        <content type="html"><![CDATA[<p>https://medium.com/swlh/why-senior-engineers-hate-coding-interviews-d583d2855757</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[7 Ways to Debug Jest Tests in Terminal | Pragmatic Pineapple 🍍]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/36</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/36"/>
+        <updated>2021-03-15T16:21:46.000Z</updated>
+        <content type="html"><![CDATA[<p>https://pragmaticpineapple.com/7-ways-to-debug-jest-tests-in-terminal/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My Twitch live coding setup in OBS - DEV Community]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/35</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/35"/>
+        <updated>2021-03-15T14:54:55.000Z</updated>
+        <content type="html"><![CDATA[<p>https://dev.to/whitep4nth3r/my-twitch-live-coding-setup-in-obs-4he0</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What is the most underestimated programming language? | by Doug Ross | Skills Matter | Medium]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/34</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/34"/>
+        <updated>2021-03-14T08:28:18.000Z</updated>
+        <content type="html"><![CDATA[<p>https://medium.com/skills-matter/what-is-the-most-underrated-programming-language-fafe164a8cd1</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Learn how to share and promote your work as an engineer | OpenFaaS - Serverless Functions Made Simple]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/33</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/33"/>
+        <updated>2021-03-13T17:34:58.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.openfaas.com/blog/promote-and-share/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CodingGarden/faqs: Welcome to the Coding Garden Frequently Asked Questions! If you are new here and you have a general question, it's very likely I've answered it already.]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/32</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/32"/>
+        <updated>2021-03-12T16:50:47.000Z</updated>
+        <content type="html"><![CDATA[<p>https://github.com/CodingGarden/faqs#faq---frequently-asked-questions</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Repl.it - Replit Dotcom]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/31</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/31"/>
+        <updated>2021-03-12T11:39:20.000Z</updated>
+        <content type="html"><![CDATA[<p>https://blog.repl.it/dotcom</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vim, switching between files rapidly using vanilla Vim (no plugins) - Stack Overflow]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/29</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/29"/>
+        <updated>2021-03-11T06:42:18.000Z</updated>
+        <content type="html"><![CDATA[<p>https://stackoverflow.com/questions/16082991/vim-switching-between-files-rapidly-using-vanilla-vim-no-plugins/16084326#16084326</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My Top Ten Tips for Surviving and Thriving in Developer Relations – thebeebs.net]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/28</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/28"/>
+        <updated>2021-03-10T17:45:21.000Z</updated>
+        <content type="html"><![CDATA[<p>https://thebeebs.net/2021/03/02/my-top-ten-tips-for-surviving-and-thriving-in-developer-relations/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Book Review: Developer, Advocate!]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/27</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/27"/>
+        <updated>2021-03-10T17:36:23.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.infoq.com/articles/developer-advocate/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Douglas Adams - Hyperland : Free Download, Borrow, and Streaming : Internet Archive]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/25</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/25"/>
+        <updated>2021-03-09T06:55:39.000Z</updated>
+        <content type="html"><![CDATA[<p>https://archive.org/details/DouglasAdams-Hyperland</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How the ARPANET Protocols Worked]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/23</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/23"/>
+        <updated>2021-03-08T19:15:31.000Z</updated>
+        <content type="html"><![CDATA[<p>https://twobithistory.org/2021/03/08/arpanet-protocols.html</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding approval workflow to your GitHub Action]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/22</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/22"/>
+        <updated>2021-03-08T19:14:17.000Z</updated>
+        <content type="html"><![CDATA[<p>https://timheuer.com/blog/add-approval-workflow-to-github-actions/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[4 things you didn’t know you could do with GitHub Actions - The GitHub Blog]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/19</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/19"/>
+        <updated>2021-03-05T17:59:20.000Z</updated>
+        <content type="html"><![CDATA[<p>https://github.blog/2021-03-04-4-things-you-didnt-know-you-could-do-with-github-actions/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HTTPWTF | HTTP Toolkit]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/17</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/17"/>
+        <updated>2021-03-05T13:54:11.000Z</updated>
+        <content type="html"><![CDATA[<p>https://httptoolkit.tech/blog/http-wtf/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[git-filter-repo(1)]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/16</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/16"/>
+        <updated>2021-03-04T17:55:43.000Z</updated>
+        <content type="html"><![CDATA[<p>https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Vim Guide for Advanced Users]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/12</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/12"/>
+        <updated>2021-02-28T18:52:48.000Z</updated>
+        <content type="html"><![CDATA[<p>https://thevaluable.dev/vim-advanced/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automating GitHub Pages Deployments with GitHub Actions – INNOQ]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/11</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/11"/>
+        <updated>2021-02-26T21:30:39.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.innoq.com/en/blog/github-actions-automation/</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How the Bit Was Born: Claude Shannon and the Invention of Information – Brain Pickings]]></title>
+        <id>https://api.github.com/repos/qmacro-org/url-notes/issues/5</id>
+        <link href="https://api.github.com/repos/qmacro-org/url-notes/issues/5"/>
+        <updated>2021-02-25T16:34:36.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.brainpickings.org/2016/09/06/james-gleick-the-information-claude-shannon/</p>]]></content>
+    </entry>
+</feed>
