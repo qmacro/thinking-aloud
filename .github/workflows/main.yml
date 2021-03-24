@@ -23,7 +23,7 @@ jobs:
       run: |
         gh api "/repos/${GITHUB_REPOSITORY}/issues?sort=created&direction=descending" \
           | ./feed \
-          > feed.xml
+          | tee feed.xml
 
     - name: Commit any updates
       run: |
