@@ -1,5 +1,6 @@
 name: Generate Atom Feed
 on:
+  push:
   workflow_dispatch:
 
 jobs:
@@ -21,8 +22,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-    - run: |
-        echo ${{ steps.issues.outputs.data }}
-
-    - run: |
-        jq . <<< ${{ steps.issues.outputs.data }}
+    - run: "echo latest release: ${{ steps.issues.outputs.data }}"
