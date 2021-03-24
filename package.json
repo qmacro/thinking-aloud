@@ -1,0 +1,11 @@
+{
+  "name": "thinking-aloud",
+  "version": "0.0.1",
+  "description": "A journal, of sorts.",
+  "main": "index.js",
+  "homepage": "https://github.com/qmacro/thinking-aloud#readme",
+  "dependencies": {
+    "feed": "^4.2.2",
+    "showdown": "^1.9.1"
+  }
+}
