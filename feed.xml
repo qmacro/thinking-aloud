@@ -3,7 +3,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-25T11:00:33.935Z</updated>
+    <updated>2021-03-25T12:19:20.233Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -14,6 +14,20 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-03-25 12:09:25]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/9</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/9"/>
+        <updated>2021-03-25T12:19:09.000Z</updated>
+        <content type="html"><![CDATA[<p>What else do I need for the basic setup of my journalling here with Thinking Aloud?</p>
+<p>On the one hand, I don't want to over-complicate things - part of the idea is to have a minimal setup. On the other hand, there are probably aspects that I'm still missing.</p>
+<p>One in particular is the ability to "go meta". In other words, I want to be able to raise issues for the repo-based journalling mechanism itself, so I can record something that's amiss and then get around to addressing that.</p>
+<p>But while I'm using issues in the simplest possible way, that's not going to work, as I'll pick up those "real" issues too in my journalling output. So it's time to turn to labels. I've alluded to the use of labels, which can be assigned to issues on GitHub, and while I was thinking more about journal entry categories, I really need a label to distinguish actual journal entries from non-journal entries.</p>
+<p>I was originally thinking of having a label for non-journal entries, such as "issue", but that seems a little silly; better to have a positive "entry" label, as I can easily add that to my "new journal entry" mechanism - the <code>gh</code> GitHub CLI lets me assign labels on issue creation, <a href="https://cli.github.com/manual/gh_issue_create">like this</a>:</p>
+<pre><code class="shell language-shell">; gh issue create --label entry --title "..."
+</code></pre>
+<p>Then it's easy to show the list of actual journal entry issues, using the very capable <a href="https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests">search & filter syntax</a>. I think this is what I'll implement next, and then I can record this sort of "missing feature" entry as an actual issue rather than an entry.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-03-25 09:53:26]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/7</id>
