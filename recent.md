@@ -1,5 +1,4 @@
-[**2021-03-24 15:44:46**](https://github.com/qmacro/thinking-aloud/issues/2)
-
+## 2021-03-24 15:44:46
 So I've got the bare minimum set up for this journal, in the [thinking-aloud][thinking-aloud] repository:
 
 * issues to contain my journal entries, and possibly conversations about them (via the comments)
@@ -25,10 +24,11 @@ If you're interested in following these journal entries, add the feed URL to you
 
 [thinking-aloud]: https://github.com/qmacro/thinking-aloud
 
-<br>
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/2)
 
-[**2021-03-24 10:55:54**](https://github.com/qmacro/thinking-aloud/issues/1)
+<hr>
 
+## 2021-03-24 10:55:54
 Can't help overthinking what I should have as my first entry in this journal. Reminds me of the feeling of starting a new notebook, and agonising over what should be on the first page - it must be neat and permanently relevant. Of course, that's nonsense.
 
 So I thought I'd just start typing. After all, the idea of this journal is to allow me to record thoughts in as friction-free a way as possible. Part of that is having a low barrier to writing, but also a low filter threshold.
@@ -39,3 +39,5 @@ Hitting `j` starts a new `tmux` 'JOURNAL' session, or attaches to an existing on
 
 And that's it. I'm not exactly sure whether things will work when I exit this buffer, I guess the only way to find out is to try it. Here goes.
 
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/1)
