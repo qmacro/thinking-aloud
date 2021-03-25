@@ -25,6 +25,7 @@ jobs:
       run: |
         gh api "/repos/${GITHUB_REPOSITORY}/issues?sort=created&direction=descending" \
           | ./feed \
+          | sed '2i<?xml-stylesheet href="pretty-feed-v3.xsl" type="text/xsl"?>' \
           | tee feed.xml
 
     - name: Commit any updates
