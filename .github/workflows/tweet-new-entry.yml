@@ -14,7 +14,7 @@ jobs:
         run: |
           _status="$(echo \
           "New 🧠 Thinking Aloud entry ${{ github.event.issue.title }} \
-          ($(echo ${{ github.event.issue.body }} | cut -c 1-60)…) \
+          ($(echo ${{ github.event.issue.body }} | cut -c 1-50)…) \
           ☞ ${{ github.event.issue.html_url }}" \
           )"
           echo "TA_STATUS=$_status" >> $GITHUB_ENV
