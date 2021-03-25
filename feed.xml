@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="pretty-feed-v3.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-25T10:21:34.721Z</updated>
+    <updated>2021-03-25T11:00:33.935Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -25,7 +26,13 @@
 <p>To take an example - in the early days of APIs, when we started to move beyond the proprietary protocols and approaches (such as remote function calls and the RFC SDK), it was HTTP that sat firmly front and centre as the protocol around which the API world was beginning to revolve. While I could have got by with just a shallow understanding of HTTP, enough to create, make and debug API calls, I dove right in, to the extent that I call <a href="https://tools.ietf.org/html/rfc2616">RFC 2616</a> a friend. Moreover, that journey led me to properly understand that HTTP is an <em>application</em> protocol, which in turn helped me understand why the whole Web Services Deathstar was destined from birth for self-destruction, because it was built on false foundations (the abuse of HTTP as a <em>transport</em> protocol). And of course, those investigations led me to Roy Fielding's thesis and the concepts of Representational State Transfer (REST), which -- to an extent -- underpins much of the API surface area today.</p>
 <p>In my journey of discovery here, everything I did eventually became relevant to my work. Not by chance, but, I think, by relation.</p>
 <p>So now where do I go with that? Well, while I'm not yet using GraphQL (except for an experiment with GitHub's API surface), I have at least <a href="https://blogs.sap.com/2018/09/03/monday-morning-thoughts-considering-graphql/">looked into it</a>, at least enough for now to understand how it differs from, say, RESTful approaches, and, as <a href="https://en.wikipedia.org/wiki/Nigel_Molesworth">Molesworth</a> might say, in a "kno yore enemie" kind of way. And I do know that GraphQL most likely <em>will</em> feature in my future, so it's something I'll look into.</p>
-<p>Anyway, what am I saying here? I think I'm saying that there's a semi-conscious filtering that goes on in my head when it comes to continuous learning; filtering that is designed to protect me from burnout, from learning stuff that I'll never get a chance to practise, but most of all to take advantage of a key aspect of learning - helping me to build the next layer of understanding.</p>]]></content>
+<p>Anyway, what am I saying here? I think I'm saying that there's a semi-conscious filtering that goes on in my head when it comes to continuous learning; filtering that is designed to protect me from burnout, from learning stuff that I'll never get a chance to practise, but most of all to take advantage of a key aspect of learning - helping me to build the next layer of understanding.</p>
+<p>An additional thought here relates to the need for practice. Jeroen <a href="https://twitter.com/JeroenJacobs79/status/1374977310491836420">commented</a>:</p>
+<blockquote>
+  <p>… the things I learn outside business hours, well it seems I forget most of it if I don't apply it during the work day</p>
+</blockquote>
+<p>This reminded me of a great conversation between Scott Hanselman and Romain Goyet on a new pocket calculator, in the Hanselminutes podcast episode <a href="https://hanselminutes.com/779/its-time-for-a-new-kind-of-calculator-with-numworks-romain-goyet">It's time for a new kind of calculator with NumWorks' Romain Goyet</a>. Romain talked about energy consumption and eventual battery drain in devices, and drew out the distinction between dynamic RAM and static RAM. </p>
+<p>I think our minds are a lot like dynamic RAM, in that they need to be regularly refreshed (perhaps not as frequently as dynamic RAM!) with the same information, lest that information loses synaptic relevance and fades away. </p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-03-24 15:44:46]]></title>
