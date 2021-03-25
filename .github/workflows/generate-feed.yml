@@ -6,14 +6,15 @@ on:
 
 jobs:
   generate:
+    if: github.actor == github.repository_owner
     runs-on: self-hosted
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2.3.4
-      
+
     - name: Setup Node environment
       uses: actions/setup-node@v2.1.5
-      
+
     - name: Install Node modules
       run: |
         npm install
