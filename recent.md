@@ -15,6 +15,14 @@ So now where do I go with that? Well, while I'm not yet using GraphQL (except fo
 
 Anyway, what am I saying here? I think I'm saying that there's a semi-conscious filtering that goes on in my head when it comes to continuous learning; filtering that is designed to protect me from burnout, from learning stuff that I'll never get a chance to practise, but most of all to take advantage of a key aspect of learning - helping me to build the next layer of understanding.
 
+An additional thought here relates to the need for practice. Jeroen [commented](https://twitter.com/JeroenJacobs79/status/1374977310491836420):
+
+> ... the things I learn outside business hours, well it seems I forget most of it if I don't apply it during the work day
+
+This reminded me of a great conversation between Scott Hanselman and Romain Goyet on a new pocket calculator, in the Hanselminutes podcast episode [It's time for a new kind of calculator with NumWorks' Romain Goyet](https://hanselminutes.com/779/its-time-for-a-new-kind-of-calculator-with-numworks-romain-goyet). Romain talked about energy consumption and eventual battery drain in devices, and drew out the distinction between dynamic RAM and static RAM. 
+
+I think our minds are a lot like dynamic RAM, in that they need to be regularly refreshed (perhaps not as frequently as dynamic RAM!) with the same information, lest that information loses synaptic relevance and fades away. 
+
 [impostor-syndrome]: https://blogs.sap.com/2018/10/01/monday-morning-thoughts-impostor-syndrome/
 
 
