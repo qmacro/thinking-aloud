@@ -39,11 +39,8 @@ jobs:
     steps:
       - name: Prepare tweet status
         run: |
-          _status="$(echo \
-          "New 🧠 Thinking Aloud entry ${{ github.event.issue.title }} \
-          ($(echo ${{ github.event.issue.body }} | cut -c 1-50)…) \
-          ☞ ${{ github.event.issue.html_url }}" \
-          )"
+          _exerpt="$(echo ${{ github.event.issue.body }} | cut -c 1-50)"
+          _status="$(echo "New 🧠 Thinking Aloud entry ${{ github.event.issue.title }} ($_excerpt) ☞ ${{ github.event.issue.html_url }}")"
           echo "TA_STATUS=$_status" >> $GITHUB_ENV
       - name: Construct and send tweet
         uses: ethomson/send-tweet-action@v1
