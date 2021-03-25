@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-25T10:19:38.104Z</updated>
+    <updated>2021-03-25T10:20:28.632Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -18,7 +18,8 @@
         <id>https://github.com/qmacro/thinking-aloud/issues/7</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/7"/>
         <updated>2021-03-25T10:13:52.000Z</updated>
-        <content type="html"><![CDATA[<p>Starting from a <a href="https://twitter.com/alexellisuk/status/1374657364813619201">tweet from Alex Ellis on learning & age</a>, in one of the ensuing threads, Jeroen Jacobs described the challenges of learning while working, and the challenge of that learning being non-billable and / or fleeting due to lack of opportunities to practise.</p>
+        <content type="html"><![CDATA[<p>Some thoughts on learning, and how I pick the topics. </p>
+<p>Starting from a <a href="https://twitter.com/alexellisuk/status/1374657364813619201">tweet from Alex Ellis on learning & age</a>, in one of the ensuing threads, Jeroen Jacobs described the challenges of learning while working, and the challenge of that learning being non-billable and / or fleeting due to lack of opportunities to practise.</p>
 <p>I've been a life long learner, not initially consciously by any means, but, helped by my <a href="https://blogs.sap.com/2018/10/01/monday-morning-thoughts-impostor-syndrome/">impostor syndrome</a> I've always strived to flesh out my knowledge and remain above water. With computing in general, and enterprise computing in particular, I've found that it was usually natural to discover related topics that I had little idea about.</p>
 <p>So those were the natural targets for new learning efforts. Not only because I could relate to them because they were to some degree relevant to the task at hand, but also because I had started to figure out that the more I knew about those related topics, the greater my overall understanding of things and the more useful I became.</p>
 <p>To take an example - in the early days of APIs, when we started to move beyond the proprietary protocols and approaches (such as remote function calls and the RFC SDK), it was HTTP that sat firmly front and centre as the protocol around which the API world was beginning to revolve. While I could have got by with just a shallow understanding of HTTP, enough to create, make and debug API calls, I dove right in, to the extent that I call <a href="https://tools.ietf.org/html/rfc2616">RFC 2616</a> a friend. Moreover, that journey led me to properly understand that HTTP is an <em>application</em> protocol, which in turn helped me understand why the whole Web Services Deathstar was destined from birth for self-destruction, because it was built on false foundations (the abuse of HTTP as a <em>transport</em> protocol). And of course, those investigations led me to Roy Fielding's thesis and the concepts of Representational State Transfer (REST), which -- to an extent -- underpins much of the API surface area today.</p>
