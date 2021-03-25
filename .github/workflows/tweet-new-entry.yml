@@ -6,7 +6,7 @@ on:
 
 jobs:
   generate:
-    if: github.actor == github.repository_owner
+    if: github.actor == github.repository_owner && contains(github.event.issue.labels.*.name, 'entry')
     runs-on: self-hosted
     steps:
 
