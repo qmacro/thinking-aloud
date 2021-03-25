@@ -1,0 +1,55 @@
+name: Handle new / edited entry
+on:
+  issues:
+      types: [opened, edited]
+
+jobs:
+
+  # First, generate the new feed XML and 'recent' content based on the issues list.
+  generate:
+    if: github.actor == github.repository_owner && contains(github.event.issue.labels.*.name, 'entry')
+    runs-on: self-hosted
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2.3.4
+    - name: Setup Node environment
+      uses: actions/setup-node@v2.1.5
+    - name: Install Node modules
+      run: |
+        npm install
+    - name: Generate feed XML and 'recent' content
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh api "/repos/${GITHUB_REPOSITORY}/issues?labels=entry&sort=created&direction=descending" > issues.json
+        ./feed < issues.json > feed.xml
+        ./render < issues.json > recent.md
+    - name: Commit any updates
+      run: |
+        git config --global user.email "qmacro@gmail.com"
+        git config --global user.name "DJ Adams"
+        git diff --exit-code feed.xml recent.md || git add feed.xml recent.md && git commit -m 'update feed and recent' && git push
+
+  # Now, tweet about the new entry, but only when the entry is originally created
+  # and (via the needs: generate) only if the content and feed generation was OK.
+  tweet:
+    needs: generate
+    if: github.event.action == 'opened'
+    runs-on: self-hosted
+    steps:
+      - name: Prepare tweet status
+        run: |
+          _status="$(echo \
+          "New 🧠 Thinking Aloud entry ${{ github.event.issue.title }} \
+          ($(echo ${{ github.event.issue.body }} | cut -c 1-50)…) \
+          ☞ ${{ github.event.issue.html_url }}" \
+          )"
+          echo "TA_STATUS=$_status" >> $GITHUB_ENV
+      - name: Construct and send tweet
+        uses: ethomson/send-tweet-action@v1
+        with:
+          status: ${{ env.TA_STATUS }}
+          consumer-key: ${{ secrets.TWURL_CONSUMER_KEY }}
+          consumer-secret: ${{ secrets.TWURL_CONSUMER_SECRET }}
+          access-token: ${{ secrets.TWURL_TOKEN }}
+          access-token-secret: ${{ secrets.TWURL_SECRET }}
