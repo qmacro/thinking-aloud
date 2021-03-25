@@ -1,4 +1,6 @@
 ## 2021-03-25 09:53:26
+Some thoughts on learning, and how I pick the topics. 
+
 Starting from a [tweet from Alex Ellis on learning & age](https://twitter.com/alexellisuk/status/1374657364813619201), in one of the ensuing threads, Jeroen Jacobs described the challenges of learning while working, and the challenge of that learning being non-billable and / or fleeting due to lack of opportunities to practise.
 
 I've been a life long learner, not initially consciously by any means, but, helped by my [impostor syndrome][impostor-syndrome] I've always strived to flesh out my knowledge and remain above water. With computing in general, and enterprise computing in particular, I've found that it was usually natural to discover related topics that I had little idea about.
