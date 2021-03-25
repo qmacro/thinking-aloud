@@ -1,3 +1,25 @@
+## 2021-03-25 12:09:25
+What else do I need for the basic setup of my journalling here with Thinking Aloud?
+
+On the one hand, I don't want to over-complicate things - part of the idea is to have a minimal setup. On the other hand, there are probably aspects that I'm still missing.
+
+One in particular is the ability to "go meta". In other words, I want to be able to raise issues for the repo-based journalling mechanism itself, so I can record something that's amiss and then get around to addressing that.
+
+But while I'm using issues in the simplest possible way, that's not going to work, as I'll pick up those "real" issues too in my journalling output. So it's time to turn to labels. I've alluded to the use of labels, which can be assigned to issues on GitHub, and while I was thinking more about journal entry categories, I really need a label to distinguish actual journal entries from non-journal entries.
+
+I was originally thinking of having a label for non-journal entries, such as "issue", but that seems a little silly; better to have a positive "entry" label, as I can easily add that to my "new journal entry" mechanism - the `gh` GitHub CLI lets me assign labels on issue creation, [like this](https://cli.github.com/manual/gh_issue_create):
+
+```shell
+; gh issue create --label entry --title "..."
+```
+
+Then it's easy to show the list of actual journal entry issues, using the very capable [search & filter syntax](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests). I think this is what I'll implement next, and then I can record this sort of "missing feature" entry as an actual issue rather than an entry.
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/9)
+
+<hr>
+
 ## 2021-03-25 09:53:26
 Some thoughts on learning, and how I pick the topics. 
 
