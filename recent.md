@@ -1,3 +1,28 @@
+## 2021-03-25 16:39:40
+I love the "Today I Learned" (TIL) idea, and even have a TIL style blog called [autodidactics][autodidactics]. That said, I'm wondering if there's also value in reifying what might be the other side of the TIL coin, i.e. the "Want To Learn" (WTL) idea.
+
+There are plenty of things that I wish I knew, from understanding specific concepts, to being able to achieve specific goals. At the very small end of the "achieve specific goals" stage there's Stack Overflow to give me answers, and that's fine. But sometimes I don't want the answer on a plate, I want to work for it, as - if time permits - the journey of effort is often fun and nearly always rewarding.
+
+Here's an example:
+
+* WTL the best way to mass-delete logs from GitHub Actions workflow runs
+
+I've read somewhere that right now it's not possible from the Actions web interface, so I'm guessing the answer might be in the use of one or more API endpoints. I know that going from where I am now to understanding how to do it will improve my knowledge and be useful too.
+
+The essence of this WTL is that it's tangible and I'll know when I've flipped it into a TIL. I know that some of the other stuff I wish I knew is less like that (grokking specific technical concepts) but not everything is black and white.
+
+I think that now I have given a name to this type of thought ("how do I do / understand that?") that swirl around my brain, bumping into and otherwise disturbing what I'm actually trying to think about, it will help. I can capture the thought as a WTL and move on.
+
+Now, where are those GitHub API docs?
+
+
+[autodidactics]: https://qmacro.org/autodidactics/
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/13)
+
+<hr>
+
 ## 2021-03-25 12:09:25
 What else do I need for the basic setup of my journalling here with Thinking Aloud?
 

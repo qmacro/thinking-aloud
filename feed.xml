@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="pretty-feed-v3.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-25T12:19:20.233Z</updated>
+    <updated>2021-03-25T17:04:35.705Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -14,6 +13,23 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-03-25 16:39:40]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/13</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/13"/>
+        <updated>2021-03-25T17:04:24.000Z</updated>
+        <content type="html"><![CDATA[<p>I love the "Today I Learned" (TIL) idea, and even have a TIL style blog called <a href="https://qmacro.org/autodidactics/">autodidactics</a>. That said, I'm wondering if there's also value in reifying what might be the other side of the TIL coin, i.e. the "Want To Learn" (WTL) idea.</p>
+<p>There are plenty of things that I wish I knew, from understanding specific concepts, to being able to achieve specific goals. At the very small end of the "achieve specific goals" stage there's Stack Overflow to give me answers, and that's fine. But sometimes I don't want the answer on a plate, I want to work for it, as - if time permits - the journey of effort is often fun and nearly always rewarding.</p>
+<p>Here's an example:</p>
+<ul>
+<li>WTL the best way to mass-delete logs from GitHub Actions workflow runs</li>
+</ul>
+<p>I've read somewhere that right now it's not possible from the Actions web interface, so I'm guessing the answer might be in the use of one or more API endpoints. I know that going from where I am now to understanding how to do it will improve my knowledge and be useful too.</p>
+<p>The essence of this WTL is that it's tangible and I'll know when I've flipped it into a TIL. I know that some of the other stuff I wish I knew is less like that (grokking specific technical concepts) but not everything is black and white.</p>
+<p>I think that now I have given a name to this type of thought ("how do I do / understand that?") that swirl around my brain, bumping into and otherwise disturbing what I'm actually trying to think about, it will help. I can capture the thought as a WTL and move on.</p>
+<p>Now, where are those GitHub API docs?</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-03-25 12:09:25]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/9</id>
@@ -27,6 +43,7 @@
 <pre><code class="shell language-shell">; gh issue create --label entry --title "..."
 </code></pre>
 <p>Then it's easy to show the list of actual journal entry issues, using the very capable <a href="https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests">search & filter syntax</a>. I think this is what I'll implement next, and then I can record this sort of "missing feature" entry as an actual issue rather than an entry.</p>]]></content>
+        <category label="entry"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-03-25 09:53:26]]></title>
@@ -47,6 +64,7 @@
 </blockquote>
 <p>This reminded me of a great conversation between Scott Hanselman and Romain Goyet on a new pocket calculator, in the Hanselminutes podcast episode <a href="https://hanselminutes.com/779/its-time-for-a-new-kind-of-calculator-with-numworks-romain-goyet">It's time for a new kind of calculator with NumWorks' Romain Goyet</a>. Romain talked about energy consumption and eventual battery drain in devices, and drew out the distinction between dynamic RAM and static RAM. </p>
 <p>I think our minds are a lot like dynamic RAM, in that they need to be regularly refreshed (perhaps not as frequently as dynamic RAM!) with the same information, lest that information loses synaptic relevance and fades away. </p>]]></content>
+        <category label="entry"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-03-24 15:44:46]]></title>
@@ -71,6 +89,7 @@
       | tee feed.xml
 </code></pre>
 <p>If you're interested in following these journal entries, add the feed URL to your favourite feed reader: <a href="https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml">https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml</a>, and if you want to comment on any of the entries, you can do so in the comments to the corresponding issue.</p>]]></content>
+        <category label="entry"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-03-24 10:55:54]]></title>
@@ -82,5 +101,6 @@
 <p>Anyway, as usual, I've spent the last hour yak shaving, setting up a little system where I can just hit <code>j</code> and get directly to typing in my thoughts.</p>
 <p>Hitting <code>j</code> starts a new <code>tmux</code> 'JOURNAL' session, or attaches to an existing one, and then uses <code>gh issue create</code> to initiate the process. The title is easy - I wanted to avoid having to think about what I should title each journal entry, so I'm simply using a timestamp. The <code>gh issue create</code> process then takes me into <code>vim</code> whereupon some <code>vim</code> configuration notices that it's a Markdown buffer that I'm editing, and throws me into <code>Goyo</code> which is a fantastic way to focus on writing.</p>
 <p>And that's it. I'm not exactly sure whether things will work when I exit this buffer, I guess the only way to find out is to try it. Here goes.</p>]]></content>
+        <category label="entry"/>
     </entry>
 </feed>
