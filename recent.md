@@ -1,3 +1,17 @@
+## 2021-04-07 09:04:01
+Does it make sense to create a workflow to clean up old workflow runs?
+
+I'm using my dwr script right now to clean up some of the workflow runs in my repositories. It got me thinking - what about an automatic cleanup? Would it make sense to write a workflow ... to delete old workflow runs on a regular basis? There's a sort of pleasant balance in there as well, in that eventually, the runs from these cleanup workflows would be themselves cleaned up too.
+
+In case you're interested in the `dwr` script as it stands right now, you can find it [here](https://github.com/qmacro/dotfiles/blob/master/scripts/dwr) in my dotfiles.
+
+What do you think? Is it worth following this thought to an experimental cleanup workflow definition? What would that look like?
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/15)
+
+<hr>
+
 ## 2021-03-25 16:39:40
 I love the "Today I Learned" (TIL) idea, and even have a TIL style blog called [autodidactics][autodidactics]. That said, I'm wondering if there's also value in reifying what might be the other side of the TIL coin, i.e. the "Want To Learn" (WTL) idea.
 

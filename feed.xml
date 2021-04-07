@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-03-25T17:04:35.705Z</updated>
+    <updated>2021-04-07T08:07:35.100Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,17 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-04-07 09:04:01]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/15</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/15"/>
+        <updated>2021-04-07T08:07:23.000Z</updated>
+        <content type="html"><![CDATA[<p>Does it make sense to create a workflow to clean up old workflow runs?</p>
+<p>I'm using my dwr script right now to clean up some of the workflow runs in my repositories. It got me thinking - what about an automatic cleanup? Would it make sense to write a workflow … to delete old workflow runs on a regular basis? There's a sort of pleasant balance in there as well, in that eventually, the runs from these cleanup workflows would be themselves cleaned up too.</p>
+<p>In case you're interested in the <code>dwr</code> script as it stands right now, you can find it <a href="https://github.com/qmacro/dotfiles/blob/master/scripts/dwr">here</a> in my dotfiles.</p>
+<p>What do you think? Is it worth following this thought to an experimental cleanup workflow definition? What would that look like?</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-03-25 16:39:40]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/13</id>
