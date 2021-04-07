@@ -33,20 +33,18 @@ jobs:
   # Now, tweet about the new entry, but only when the entry is originally created
   # and (via the needs: generate) only if the content and feed generation was OK.
   tweet:
-    needs: generate
     if: github.event.action == 'opened'
     runs-on: self-hosted
     steps:
-      - name: Prepare tweet status
-        run: |
-          _exerpt="$(echo ${{ github.event.issue.body }} | cut -c 1-50)"
-          _status="$(echo "New 🧠 Thinking Aloud entry ${{ github.event.issue.title }} ($_excerpt) ☞ ${{ github.event.issue.html_url }}")"
-          echo "TA_STATUS=$_status" >> $GITHUB_ENV
-      - name: Construct and send tweet
-        uses: ethomson/send-tweet-action@v1
-        with:
-          status: ${{ env.TA_STATUS }}
-          consumer-key: ${{ secrets.TWURL_CONSUMER_KEY }}
-          consumer-secret: ${{ secrets.TWURL_CONSUMER_SECRET }}
-          access-token: ${{ secrets.TWURL_TOKEN }}
-          access-token-secret: ${{ secrets.TWURL_SECRET }}
+    - name: Checkout repository
+      uses: actions/checkout@v2.3.4
+    - name: Prepare tweet status
+      run: echo "TA_STATUS=\"$(./preptweet)\"" >> $GITHUB_ENV
+    - name: Send tweet
+      uses: ethomson/send-tweet-action@v1
+      with:
+        status: ${{ env.TA_STATUS }}
+        consumer-key: ${{ secrets.TWURL_CONSUMER_KEY }}
+        consumer-secret: ${{ secrets.TWURL_CONSUMER_SECRET }}
+        access-token: ${{ secrets.TWURL_TOKEN }}
+        access-token-secret: ${{ secrets.TWURL_SECRET }}
