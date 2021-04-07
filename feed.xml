@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-04-07T08:07:35.100Z</updated>
+    <updated>2021-04-07T15:28:17.842Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,30 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-04-07 16:27:58]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/18</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/18"/>
+        <updated>2021-04-07T15:28:04.000Z</updated>
+        <content type="html"><![CDATA[<p>One consequence of using repo issues for journal entries is that it's quite open.</p>
+<p>I just noticed that someone has added an issue (#14) recently and I'm currently not quite sure how I feel about it. The content of the issue is innocuous enough, and I think on balance I currently like how open things are. I've made efforts in the mechanics to guard against this sort of thing in that issues that are not created by me are not going to trigger any sort of update or processing.</p>
+<p>In the workflow (which is triggered when an issue is created or updated), there are two jobs, <code>generate</code> (generate the feed and recent content flow) and <code>tweet</code> (tweet that there's a new entry).</p>
+<p>The <code>generate</code> job has an <code>if</code> condition like this:</p>
+<pre><code class="yaml language-yaml">if: github.actor == github.repository_owner &amp;&amp; contains(github.event.issue.labels.*.name, 'entry')
+</code></pre>
+<p>This checks that the <code>actor</code> (the person involved in the event that triggered the workflow) is the same person as the <code>repository_owner</code>, in other words, me. It also checks that the issue has the <code>entry</code> label (see #9 as to why this is).</p>
+<p>The second job, <code>tweet</code>, also has an <code>if</code> condition, like this:</p>
+<pre><code class="yaml language-yaml">if: github.event.action == 'opened'
+</code></pre>
+<p>This ensures that a tweet is only sent when an issue is created, not also if it's updated.</p>
+<p>But the <code>tweet</code> job also has this:</p>
+<pre><code class="yaml language-yaml">needs: generate
+</code></pre>
+<p>Which means that <code>tweet</code> only runs if <code>generate</code> completes successfully. Which in turn implies that <code>generate</code>'s checks also apply here, indirectly.</p>
+<p>That's good enough for me for now.</p>
+<p>I'm still not sure how I want to proceed with this external issue. I'll have to think about it. It's a chance for engagement, but perhaps I should just automatically delete them. Let's see.</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-04-07 09:04:01]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/15</id>

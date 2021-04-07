@@ -1,3 +1,44 @@
+## 2021-04-07 16:27:58
+One consequence of using repo issues for journal entries is that it's quite open.
+
+I just noticed that someone has added an issue (#14) recently and I'm currently not quite sure how I feel about it. The content of the issue is innocuous enough, and I think on balance I currently like how open things are. I've made efforts in the mechanics to guard against this sort of thing in that issues that are not created by me are not going to trigger any sort of update or processing.
+
+In the workflow (which is triggered when an issue is created or updated), there are two jobs, `generate` (generate the feed and recent content flow) and `tweet` (tweet that there's a new entry).
+
+The `generate` job has an `if` condition like this:
+
+```yaml
+if: github.actor == github.repository_owner && contains(github.event.issue.labels.*.name, 'entry')
+```
+
+This checks that the `actor` (the person involved in the event that triggered the workflow) is the same person as the `repository_owner`, in other words, me. It also checks that the issue has the `entry` label (see #9 as to why this is).
+
+The second job, `tweet`, also has an `if` condition, like this:
+
+```yaml
+if: github.event.action == 'opened'
+```
+
+This ensures that a tweet is only sent when an issue is created, not also if it's updated.
+
+But the `tweet` job also has this:
+
+```yaml
+needs: generate
+```
+
+Which means that `tweet` only runs if `generate` completes successfully. Which in turn implies that `generate`'s checks also apply here, indirectly.
+
+That's good enough for me for now.
+
+I'm still not sure how I want to proceed with this external issue. I'll have to think about it. It's a chance for engagement, but perhaps I should just automatically delete them. Let's see.
+
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/18)
+
+<hr>
+
 ## 2021-04-07 09:04:01
 Does it make sense to create a workflow to clean up old workflow runs?
 
