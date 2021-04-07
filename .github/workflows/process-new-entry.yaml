@@ -33,6 +33,7 @@ jobs:
   # Now, tweet about the new entry, but only when the entry is originally created
   # and (via the needs: generate) only if the content and feed generation was OK.
   tweet:
+    needs: generate
     if: github.event.action == 'opened'
     runs-on: self-hosted
     steps:
