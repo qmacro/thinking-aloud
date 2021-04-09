@@ -21,7 +21,9 @@ This argument reminds me of an exhortation I saw the other day in a handbook for
 
 English is my first language. I could say that German is my second language, and that's pushing it, a lot. While I was learning German in the early days (mostly by osmosis), I used to read technical articles and came across words that I hadn't seen before. Guess what? I looked them up, and my knowledge expanded. Not only relating directly to that word, but also to other future words that shared the same root.
 
-Anyway, what am I saying here in this journal entry? I guess, at the end of the day, it's a lovely first world problem - debating what convention we prefer for our field names. It's pleasant to discuss, expressing our opinions is a healthy way to pass the time, and helps me keep sharp, as there are always great alternative opinions out there that challenge my thinking. And I like that. For me, sharing my thoughts, having them challenged, and learning - that's what it's all about.
+Anyway, what am I saying here in this journal entry? I guess, at the end of the day, it's a lovely first world problem - debating what convention we prefer for our field names. It's pleasant to discuss, expressing our opinions is a healthy way to pass the time, and helps me keep sharp, as there are always great alternative opinions out there that challenge my thinking. And I like that. For me, sharing my thoughts, having them challenged, and learning - that's what it's all about. 
+
+And for those who still can't figure out why I like the 5 char uppercase names, it's because they don't have all the problems that longer, mixed case names have, that I described above :-)
 
 
 [Discuss](https://github.com/qmacro/thinking-aloud/issues/19)
