@@ -1,4 +1,4 @@
-## 2021-04-09 13:17:08
+## 2021-04-09 13:17:08 I've been thinking about field naming conventions …
 I've been thinking about field naming conventions today, after the pleasantly opinionated threads on Twitter.
 
 I expressed that I like the old 5 character (usually uppercase) field names that appeared with R/2. Anyone who's been working in the SAP ecosphere will know what I'm taking about, fields like BUKRS, LIFNR, MANDT, WAERS, and so on.
@@ -30,7 +30,7 @@ And for those who still can't figure out why I like the 5 char uppercase names, 
 
 <hr>
 
-## 2021-04-07 16:27:58
+## 2021-04-07 16:27:58 One consequence of using repo issues for journal e…
 One consequence of using repo issues for journal entries is that it's quite open.
 
 I just noticed that someone has added an issue (#14) recently and I'm currently not quite sure how I feel about it. The content of the issue is innocuous enough, and I think on balance I currently like how open things are. I've made efforts in the mechanics to guard against this sort of thing in that issues that are not created by me are not going to trigger any sort of update or processing.
@@ -71,7 +71,7 @@ I'm still not sure how I want to proceed with this external issue. I'll have to 
 
 <hr>
 
-## 2021-04-07 09:04:01
+## 2021-04-07 09:04:01 Does it make sense to create a workflow to clean u…
 Does it make sense to create a workflow to clean up old workflow runs?
 
 I'm using my dwr script right now to clean up some of the workflow runs in my repositories. It got me thinking - what about an automatic cleanup? Would it make sense to write a workflow ... to delete old workflow runs on a regular basis? There's a sort of pleasant balance in there as well, in that eventually, the runs from these cleanup workflows would be themselves cleaned up too.
@@ -85,7 +85,7 @@ What do you think? Is it worth following this thought to an experimental cleanup
 
 <hr>
 
-## 2021-03-25 16:39:40
+## 2021-03-25 16:39:40 I love the "Today I Learned" (TIL) idea, and even …
 I love the "Today I Learned" (TIL) idea, and even have a TIL style blog called [autodidactics][autodidactics]. That said, I'm wondering if there's also value in reifying what might be the other side of the TIL coin, i.e. the "Want To Learn" (WTL) idea.
 
 There are plenty of things that I wish I knew, from understanding specific concepts, to being able to achieve specific goals. At the very small end of the "achieve specific goals" stage there's Stack Overflow to give me answers, and that's fine. But sometimes I don't want the answer on a plate, I want to work for it, as - if time permits - the journey of effort is often fun and nearly always rewarding.
@@ -110,7 +110,7 @@ Now, where are those GitHub API docs?
 
 <hr>
 
-## 2021-03-25 12:09:25
+## 2021-03-25 12:09:25 What else do I need for the basic setup of my jour…
 What else do I need for the basic setup of my journalling here with Thinking Aloud?
 
 On the one hand, I don't want to over-complicate things - part of the idea is to have a minimal setup. On the other hand, there are probably aspects that I'm still missing.

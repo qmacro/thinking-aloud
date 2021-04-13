@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-04-13T12:20:33.311Z</updated>
+    <updated>2021-04-13T12:21:52.324Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -14,7 +14,7 @@
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
     <entry>
-        <title type="html"><![CDATA[2021-04-09 13:17:08]]></title>
+        <title type="html"><![CDATA[2021-04-09 13:17:08 I've been thinking about field naming conventions …]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/19</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/19"/>
         <updated>2021-04-09T12:36:43.000Z</updated>
@@ -34,7 +34,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-04-07 16:27:58]]></title>
+        <title type="html"><![CDATA[2021-04-07 16:27:58 One consequence of using repo issues for journal e…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/18</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/18"/>
         <updated>2021-04-07T15:28:04.000Z</updated>
@@ -58,7 +58,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-04-07 09:04:01]]></title>
+        <title type="html"><![CDATA[2021-04-07 09:04:01 Does it make sense to create a workflow to clean u…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/15</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/15"/>
         <updated>2021-04-07T08:07:23.000Z</updated>
@@ -69,7 +69,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-25 16:39:40]]></title>
+        <title type="html"><![CDATA[2021-03-25 16:39:40 I love the "Today I Learned" (TIL) idea, and even …]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/13</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/13"/>
         <updated>2021-03-25T17:04:24.000Z</updated>
@@ -86,7 +86,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-25 12:09:25]]></title>
+        <title type="html"><![CDATA[2021-03-25 12:09:25 What else do I need for the basic setup of my jour…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/9</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/9"/>
         <updated>2021-03-25T12:19:09.000Z</updated>
