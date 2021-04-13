@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-04-07T08:07:35.100Z</updated>
+    <updated>2021-04-13T12:21:52.324Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -14,7 +14,51 @@
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
     <entry>
-        <title type="html"><![CDATA[2021-04-07 09:04:01]]></title>
+        <title type="html"><![CDATA[2021-04-09 13:17:08 I've been thinking about field naming conventions …]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/19</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/19"/>
+        <updated>2021-04-09T12:36:43.000Z</updated>
+        <content type="html"><![CDATA[<p>I've been thinking about field naming conventions today, after the pleasantly opinionated threads on Twitter.</p>
+<p>I expressed that I like the old 5 character (usually uppercase) field names that appeared with R/2. Anyone who's been working in the SAP ecosphere will know what I'm taking about, fields like BUKRS, LIFNR, MANDT, WAERS, and so on.</p>
+<p>For me, there's a certain beauty about them, a uniformity and a neatness that I haven't seen elsewhere.</p>
+<p>Of course, this beauty can't be seen by some folks - they express a preference for longer names, but for me, those longer names are ugly, bring about a requirement for extra brain cycles to determine whether they should be camelCased, TitleCased, kebab-cased, snake_cased or some combination thereof.</p>
+<p>And what about how long they're allowed to be, or how short? There's another decision right there. Moreover, it's often the case that naming conventions are loose, so you see all sorts of ugly mismatched cases for variables scattered throughout code.</p>
+<p>Worst of all though are those variables that are so long (I'm thinking longer than 10 chars, that's double what my favourite style restricts itself to) makes code much harder to read. For me it's similar to reading a paragraph of prose when it's stretched out across the width of a widescreen monitor. Very hard on the eyes and the brain. There's a reason newspapers print articles in narrow columns.</p>
+<p>There's more. I've not even got on to prefixes. Hungarian notation, anyone? What do you prefer there? And should the prefix be separated by some sort of symbol, or be part of the variable name directly?</p>
+<p>Moreover, some folks have expressed an opinion (to which they're naturally entitled, we all are) that fields like BUKRS, MANDT and so on are restrictive because they're short forms of German words, and that's a barrier to entry.</p>
+<p>When I started in 1987 in the SAP world, with R/2 4.1d, I was awash with these field names. What's more, I didn't speak a word of German. But it wasn't a problem - the brain is good at pattern matching in the first instance, and then when I had time, I looked up what they meant. BUKRS - Buchungskreis - Company Code (posting area). Right! And that served only to strengthen the slot in my brain that remembered that field name.</p>
+<p>This argument reminds me of an exhortation I saw the other day in a handbook for writing documentation, or even blog posts. Write using simple words, in simple terms. To be honest, I find that ever so slightly insulting to the reader. </p>
+<p>English is my first language. I could say that German is my second language, and that's pushing it, a lot. While I was learning German in the early days (mostly by osmosis), I used to read technical articles and came across words that I hadn't seen before. Guess what? I looked them up, and my knowledge expanded. Not only relating directly to that word, but also to other future words that shared the same root.</p>
+<p>Anyway, what am I saying here in this journal entry? I guess, at the end of the day, it's a lovely first world problem - debating what convention we prefer for our field names. It's pleasant to discuss, expressing our opinions is a healthy way to pass the time, and helps me keep sharp, as there are always great alternative opinions out there that challenge my thinking. And I like that. For me, sharing my thoughts, having them challenged, and learning - that's what it's all about. </p>
+<p>And for those who still can't figure out why I like the 5 char uppercase names, it's because they don't have all the problems that longer, mixed case names have, that I described above :-)</p>]]></content>
+        <category label="entry"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021-04-07 16:27:58 One consequence of using repo issues for journal e…]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/18</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/18"/>
+        <updated>2021-04-07T15:28:04.000Z</updated>
+        <content type="html"><![CDATA[<p>One consequence of using repo issues for journal entries is that it's quite open.</p>
+<p>I just noticed that someone has added an issue (#14) recently and I'm currently not quite sure how I feel about it. The content of the issue is innocuous enough, and I think on balance I currently like how open things are. I've made efforts in the mechanics to guard against this sort of thing in that issues that are not created by me are not going to trigger any sort of update or processing.</p>
+<p>In the workflow (which is triggered when an issue is created or updated), there are two jobs, <code>generate</code> (generate the feed and recent content flow) and <code>tweet</code> (tweet that there's a new entry).</p>
+<p>The <code>generate</code> job has an <code>if</code> condition like this:</p>
+<pre><code class="yaml language-yaml">if: github.actor == github.repository_owner &amp;&amp; contains(github.event.issue.labels.*.name, 'entry')
+</code></pre>
+<p>This checks that the <code>actor</code> (the person involved in the event that triggered the workflow) is the same person as the <code>repository_owner</code>, in other words, me. It also checks that the issue has the <code>entry</code> label (see #9 as to why this is).</p>
+<p>The second job, <code>tweet</code>, also has an <code>if</code> condition, like this:</p>
+<pre><code class="yaml language-yaml">if: github.event.action == 'opened'
+</code></pre>
+<p>This ensures that a tweet is only sent when an issue is created, not also if it's updated.</p>
+<p>But the <code>tweet</code> job also has this:</p>
+<pre><code class="yaml language-yaml">needs: generate
+</code></pre>
+<p>Which means that <code>tweet</code> only runs if <code>generate</code> completes successfully. Which in turn implies that <code>generate</code>'s checks also apply here, indirectly.</p>
+<p>That's good enough for me for now.</p>
+<p>I'm still not sure how I want to proceed with this external issue. I'll have to think about it. It's a chance for engagement, but perhaps I should just automatically delete them. Let's see.</p>]]></content>
+        <category label="entry"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021-04-07 09:04:01 Does it make sense to create a workflow to clean u…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/15</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/15"/>
         <updated>2021-04-07T08:07:23.000Z</updated>
@@ -25,7 +69,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-25 16:39:40]]></title>
+        <title type="html"><![CDATA[2021-03-25 16:39:40 I love the "Today I Learned" (TIL) idea, and even …]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/13</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/13"/>
         <updated>2021-03-25T17:04:24.000Z</updated>
@@ -42,7 +86,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-25 12:09:25]]></title>
+        <title type="html"><![CDATA[2021-03-25 12:09:25 What else do I need for the basic setup of my jour…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/9</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/9"/>
         <updated>2021-03-25T12:19:09.000Z</updated>
@@ -57,7 +101,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-25 09:53:26]]></title>
+        <title type="html"><![CDATA[2021-03-25 09:53:26 Some thoughts on learning, and how I pick the topi…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/7</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/7"/>
         <updated>2021-03-25T10:13:52.000Z</updated>
@@ -78,15 +122,15 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-24 15:44:46]]></title>
+        <title type="html"><![CDATA[2021-03-24 15:44:46 So I've got the bare minimum set up for this journ…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/2</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/2"/>
         <updated>2021-03-24T16:00:34.000Z</updated>
         <content type="html"><![CDATA[<p>So I've got the bare minimum set up for this journal, in the <a href="https://github.com/qmacro/thinking-aloud">thinking-aloud</a> repository:</p>
 <ul>
 <li>issues to contain my journal entries, and possibly conversations about them (via the comments)</li>
-<li>a simple <a href="https://github.com/qmacro/thinking-aloud/blob/main/feed">Atom feed generator</a> that will build an Atom 1.0 feed from a JSON list of issues that I can retrieve from the GitHub API - the feed's URL is <a href="https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml">https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml</a></li>
-<li>labels that I can assign to the issues for eventual categorisation (I have <a href="https://github.com/qmacro/thinking-aloud/blob/08bf3f98064237c35b3bf7ae4fb16b5ecb9608b6/feed#L44">made provision for this in the feed generator already</a></li>
+<li>a simple <a href="https://github.com/qmacro/thinking-aloud/blob/main/feed">Atom feed generator</a> that will build an Atom 1.0 feed from a JSON list of issues that I can retrieve from the GitHub API - the feed's URL is https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml</li>
+<li>labels that I can assign to the issues for eventual categorisation (I have <a href="https://github.com/qmacro/thinking-aloud/blob/08bf3f98064237c35b3bf7ae4fb16b5ecb9608b6/feed#L44">made provision for this in the feed generator already</a>)</li>
 <li>a GitHub Actions <a href="https://github.com/qmacro/thinking-aloud/actions/workflows/generate-feed.yml">workflow</a> that is triggered when an issue is created or edited and causes the feed to be rebuilt</li>
 </ul>
 <p>This was a pleasant few hours messing around on a day off. Well, I say pleasant, there was one unpleasant part which was trying (and failing) to parse and use the output from the <a href="https://github.com/octokit/request-action">octokit/request-action</a>.</p>
@@ -99,11 +143,11 @@
       | ./feed \
       | tee feed.xml
 </code></pre>
-<p>If you're interested in following these journal entries, add the feed URL to your favourite feed reader: <a href="https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml">https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml</a>, and if you want to comment on any of the entries, you can do so in the comments to the corresponding issue.</p>]]></content>
+<p>If you're interested in following these journal entries, add the feed URL to your favourite feed reader: https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml, and if you want to comment on any of the entries, you can do so in the comments to the corresponding issue.</p>]]></content>
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-24 10:55:54]]></title>
+        <title type="html"><![CDATA[2021-03-24 10:55:54 Can't help overthinking what I should have as my f…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/1</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/1"/>
         <updated>2021-03-24T11:03:40.000Z</updated>

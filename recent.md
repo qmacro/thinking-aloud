@@ -1,4 +1,77 @@
-## 2021-04-07 09:04:01
+## 2021-04-09 13:17:08 I've been thinking about field naming conventions …
+I've been thinking about field naming conventions today, after the pleasantly opinionated threads on Twitter.
+
+I expressed that I like the old 5 character (usually uppercase) field names that appeared with R/2. Anyone who's been working in the SAP ecosphere will know what I'm taking about, fields like BUKRS, LIFNR, MANDT, WAERS, and so on.
+
+For me, there's a certain beauty about them, a uniformity and a neatness that I haven't seen elsewhere.
+
+Of course, this beauty can't be seen by some folks - they express a preference for longer names, but for me, those longer names are ugly, bring about a requirement for extra brain cycles to determine whether they should be camelCased, TitleCased, kebab-cased, snake_cased or some combination thereof.
+
+And what about how long they're allowed to be, or how short? There's another decision right there. Moreover, it's often the case that naming conventions are loose, so you see all sorts of ugly mismatched cases for variables scattered throughout code.
+
+Worst of all though are those variables that are so long (I'm thinking longer than 10 chars, that's double what my favourite style restricts itself to) makes code much harder to read. For me it's similar to reading a paragraph of prose when it's stretched out across the width of a widescreen monitor. Very hard on the eyes and the brain. There's a reason newspapers print articles in narrow columns.
+
+There's more. I've not even got on to prefixes. Hungarian notation, anyone? What do you prefer there? And should the prefix be separated by some sort of symbol, or be part of the variable name directly?
+
+Moreover, some folks have expressed an opinion (to which they're naturally entitled, we all are) that fields like BUKRS, MANDT and so on are restrictive because they're short forms of German words, and that's a barrier to entry.
+
+When I started in 1987 in the SAP world, with R/2 4.1d, I was awash with these field names. What's more, I didn't speak a word of German. But it wasn't a problem - the brain is good at pattern matching in the first instance, and then when I had time, I looked up what they meant. BUKRS - Buchungskreis - Company Code (posting area). Right! And that served only to strengthen the slot in my brain that remembered that field name.
+
+This argument reminds me of an exhortation I saw the other day in a handbook for writing documentation, or even blog posts. Write using simple words, in simple terms. To be honest, I find that ever so slightly insulting to the reader. 
+
+English is my first language. I could say that German is my second language, and that's pushing it, a lot. While I was learning German in the early days (mostly by osmosis), I used to read technical articles and came across words that I hadn't seen before. Guess what? I looked them up, and my knowledge expanded. Not only relating directly to that word, but also to other future words that shared the same root.
+
+Anyway, what am I saying here in this journal entry? I guess, at the end of the day, it's a lovely first world problem - debating what convention we prefer for our field names. It's pleasant to discuss, expressing our opinions is a healthy way to pass the time, and helps me keep sharp, as there are always great alternative opinions out there that challenge my thinking. And I like that. For me, sharing my thoughts, having them challenged, and learning - that's what it's all about. 
+
+And for those who still can't figure out why I like the 5 char uppercase names, it's because they don't have all the problems that longer, mixed case names have, that I described above :-)
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/19)
+
+<hr>
+
+## 2021-04-07 16:27:58 One consequence of using repo issues for journal e…
+One consequence of using repo issues for journal entries is that it's quite open.
+
+I just noticed that someone has added an issue (#14) recently and I'm currently not quite sure how I feel about it. The content of the issue is innocuous enough, and I think on balance I currently like how open things are. I've made efforts in the mechanics to guard against this sort of thing in that issues that are not created by me are not going to trigger any sort of update or processing.
+
+In the workflow (which is triggered when an issue is created or updated), there are two jobs, `generate` (generate the feed and recent content flow) and `tweet` (tweet that there's a new entry).
+
+The `generate` job has an `if` condition like this:
+
+```yaml
+if: github.actor == github.repository_owner && contains(github.event.issue.labels.*.name, 'entry')
+```
+
+This checks that the `actor` (the person involved in the event that triggered the workflow) is the same person as the `repository_owner`, in other words, me. It also checks that the issue has the `entry` label (see #9 as to why this is).
+
+The second job, `tweet`, also has an `if` condition, like this:
+
+```yaml
+if: github.event.action == 'opened'
+```
+
+This ensures that a tweet is only sent when an issue is created, not also if it's updated.
+
+But the `tweet` job also has this:
+
+```yaml
+needs: generate
+```
+
+Which means that `tweet` only runs if `generate` completes successfully. Which in turn implies that `generate`'s checks also apply here, indirectly.
+
+That's good enough for me for now.
+
+I'm still not sure how I want to proceed with this external issue. I'll have to think about it. It's a chance for engagement, but perhaps I should just automatically delete them. Let's see.
+
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/18)
+
+<hr>
+
+## 2021-04-07 09:04:01 Does it make sense to create a workflow to clean u…
 Does it make sense to create a workflow to clean up old workflow runs?
 
 I'm using my dwr script right now to clean up some of the workflow runs in my repositories. It got me thinking - what about an automatic cleanup? Would it make sense to write a workflow ... to delete old workflow runs on a regular basis? There's a sort of pleasant balance in there as well, in that eventually, the runs from these cleanup workflows would be themselves cleaned up too.
@@ -12,7 +85,7 @@ What do you think? Is it worth following this thought to an experimental cleanup
 
 <hr>
 
-## 2021-03-25 16:39:40
+## 2021-03-25 16:39:40 I love the "Today I Learned" (TIL) idea, and even …
 I love the "Today I Learned" (TIL) idea, and even have a TIL style blog called [autodidactics][autodidactics]. That said, I'm wondering if there's also value in reifying what might be the other side of the TIL coin, i.e. the "Want To Learn" (WTL) idea.
 
 There are plenty of things that I wish I knew, from understanding specific concepts, to being able to achieve specific goals. At the very small end of the "achieve specific goals" stage there's Stack Overflow to give me answers, and that's fine. But sometimes I don't want the answer on a plate, I want to work for it, as - if time permits - the journey of effort is often fun and nearly always rewarding.
@@ -37,7 +110,7 @@ Now, where are those GitHub API docs?
 
 <hr>
 
-## 2021-03-25 12:09:25
+## 2021-03-25 12:09:25 What else do I need for the basic setup of my jour…
 What else do I need for the basic setup of my journalling here with Thinking Aloud?
 
 On the one hand, I don't want to over-complicate things - part of the idea is to have a minimal setup. On the other hand, there are probably aspects that I'm still missing.
@@ -59,7 +132,7 @@ Then it's easy to show the list of actual journal entry issues, using the very c
 
 <hr>
 
-## 2021-03-25 09:53:26
+## 2021-03-25 09:53:26 Some thoughts on learning, and how I pick the topi…
 Some thoughts on learning, and how I pick the topics. 
 
 Starting from a [tweet from Alex Ellis on learning & age](https://twitter.com/alexellisuk/status/1374657364813619201), in one of the ensuing threads, Jeroen Jacobs described the challenges of learning while working, and the challenge of that learning being non-billable and / or fleeting due to lack of opportunities to practise.
@@ -92,12 +165,12 @@ I think our minds are a lot like dynamic RAM, in that they need to be regularly 
 
 <hr>
 
-## 2021-03-24 15:44:46
-So I've got the bare minimum set up for this journal, in the [thinking-aloud][thinking-aloud] repository:
+## 2021-03-24 15:44:46 So I've got the bare minimum set up for this journ…
+So I've got the bare minimum set up for this journal, in the [thinking-aloud](https://github.com/qmacro/thinking-aloud) repository:
 
 * issues to contain my journal entries, and possibly conversations about them (via the comments)
-* a simple [Atom feed generator](https://github.com/qmacro/thinking-aloud/blob/main/feed) that will build an Atom 1.0 feed from a JSON list of issues that I can retrieve from the GitHub API - the feed's URL is <https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml>
-* labels that I can assign to the issues for eventual categorisation (I have [made provision for this in the feed generator already](https://github.com/qmacro/thinking-aloud/blob/08bf3f98064237c35b3bf7ae4fb16b5ecb9608b6/feed#L44)
+* a simple [Atom feed generator](https://github.com/qmacro/thinking-aloud/blob/main/feed) that will build an Atom 1.0 feed from a JSON list of issues that I can retrieve from the GitHub API - the feed's URL is https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml
+* labels that I can assign to the issues for eventual categorisation (I have [made provision for this in the feed generator already](https://github.com/qmacro/thinking-aloud/blob/08bf3f98064237c35b3bf7ae4fb16b5ecb9608b6/feed#L44))
 * a GitHub Actions [workflow](https://github.com/qmacro/thinking-aloud/actions/workflows/generate-feed.yml) that is triggered when an issue is created or edited and causes the feed to be rebuilt
 
 This was a pleasant few hours messing around on a day off. Well, I say pleasant, there was one unpleasant part which was trying (and failing) to parse and use the output from the [octokit/request-action](https://github.com/octokit/request-action).
@@ -114,15 +187,15 @@ The silver lining in this though is that I realised that I could just use the `g
       | tee feed.xml
 ```
 
-If you're interested in following these journal entries, add the feed URL to your favourite feed reader: <https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml>, and if you want to comment on any of the entries, you can do so in the comments to the corresponding issue.
+If you're interested in following these journal entries, add the feed URL to your favourite feed reader: https://raw.githubusercontent.com/qmacro/thinking-aloud/main/feed.xml, and if you want to comment on any of the entries, you can do so in the comments to the corresponding issue.
 
-[thinking-aloud]: https://github.com/qmacro/thinking-aloud
+
 
 [Discuss](https://github.com/qmacro/thinking-aloud/issues/2)
 
 <hr>
 
-## 2021-03-24 10:55:54
+## 2021-03-24 10:55:54 Can't help overthinking what I should have as my f…
 Can't help overthinking what I should have as my first entry in this journal. Reminds me of the feeling of starting a new notebook, and agonising over what should be on the first page - it must be neat and permanently relevant. Of course, that's nonsense.
 
 So I thought I'd just start typing. After all, the idea of this journal is to allow me to record thoughts in as friction-free a way as possible. Part of that is having a low barrier to writing, but also a low filter threshold.
