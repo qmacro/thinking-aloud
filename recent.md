@@ -195,7 +195,7 @@ If you're interested in following these journal entries, add the feed URL to you
 
 <hr>
 
-## 2021-03-24 10:55:54
+## 2021-03-24 10:55:54 Can't help overthinking what I should have as my f…
 Can't help overthinking what I should have as my first entry in this journal. Reminds me of the feeling of starting a new notebook, and agonising over what should be on the first page - it must be neat and permanently relevant. Of course, that's nonsense.
 
 So I thought I'd just start typing. After all, the idea of this journal is to allow me to record thoughts in as friction-free a way as possible. Part of that is having a low barrier to writing, but also a low filter threshold.

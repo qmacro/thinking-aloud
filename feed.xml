@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-04-09T14:13:39.701Z</updated>
+    <updated>2021-04-13T10:35:03.217Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -147,7 +147,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-03-24 10:55:54]]></title>
+        <title type="html"><![CDATA[2021-03-24 10:55:54 Can't help overthinking what I should have as my f…]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/1</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/1"/>
         <updated>2021-03-24T11:03:40.000Z</updated>
