@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Convert journal entry issues where the issue title is currently
+# just the date and time stamp, by adding the first <length> chars
+# of the issue body to the title.
+
 readonly length=50
 
 gh api "/repos/:owner/:repo/issues?state=open&labels=entry" \
