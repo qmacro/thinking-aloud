@@ -132,7 +132,7 @@ Then it's easy to show the list of actual journal entry issues, using the very c
 
 <hr>
 
-## 2021-03-25 09:53:26
+## 2021-03-25 09:53:26 Some thoughts on learning, and how I pick the topi…
 Some thoughts on learning, and how I pick the topics. 
 
 Starting from a [tweet from Alex Ellis on learning & age](https://twitter.com/alexellisuk/status/1374657364813619201), in one of the ensuing threads, Jeroen Jacobs described the challenges of learning while working, and the challenge of that learning being non-billable and / or fleeting due to lack of opportunities to practise.
