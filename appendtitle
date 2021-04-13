@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+readonly length=50
+
+gh api "/repos/:owner/:repo/issues?state=open&labels=entry" \
+  --jq ".[] | [.number, .title, .body[0:$length]+\"…\"] | @tsv" \
+  | grep -E '\t\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\t' \
+  | sed 's/\t/ /g' \
+  | while read -r number date time text; do
+    newtitle="$date $time $text"
+    jq -n --arg key title --arg value "$newtitle" '{($key):$value}' \
+      | gh api "/repos/:owner/:repo/issues/$number" --input -
+    sleep 0.25
+  done
