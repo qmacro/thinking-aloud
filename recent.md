@@ -165,7 +165,7 @@ I think our minds are a lot like dynamic RAM, in that they need to be regularly 
 
 <hr>
 
-## 2021-03-24 15:44:46
+## 2021-03-24 15:44:46 So I've got the bare minimum set up for this journ…
 2021-03-24 15:44:46 So I've got the bare minimum set up for this journ…
 
 [Discuss](https://github.com/qmacro/thinking-aloud/issues/2)
