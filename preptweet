@@ -9,7 +9,7 @@ set -o errexit
 declare title body url
 
 title="$(jq -r .issue.title "$GITHUB_EVENT_PATH")"
-body="$(jq -r .issue.body "$GITHUB_EVENT_PATH" | cut -c -50)…"
+body="$(jq -r .issue.body "$GITHUB_EVENT_PATH" | head -1 | cut -c -50)…"
 url="$(jq -r .issue.html_url "$GITHUB_EVENT_PATH")"
 
 echo "New 🧠 Thinking Aloud entry $title ($body) ☞ $url"
