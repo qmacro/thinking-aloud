@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-07-20T07:28:37.842Z</updated>
+    <updated>2021-07-20T07:32:07.951Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -14,10 +14,10 @@
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
     <entry>
-        <title type="html"><![CDATA[2021-07-20 08:27:54]]></title>
-        <id>https://github.com/qmacro/thinking-aloud/issues/22</id>
-        <link href="https://github.com/qmacro/thinking-aloud/issues/22"/>
-        <updated>2021-07-20T07:28:18.000Z</updated>
+        <title type="html"><![CDATA[2021-07-20 08:29:34]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/23</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/23"/>
+        <updated>2021-07-20T07:31:50.000Z</updated>
         <content type="html"><![CDATA[<p>I've decided to double down on my <code>tmux</code> fu by re-reading the man page and picking out groups of related commands that I can stick to my screen and practise when I remember.</p>
 <p>This week it's the set of commands related to panes. Here's what I have on my post-it note; they're all commands that are to be invoked following the prefix-key, and all relate to panes in the current window.</p>
 <p>|Command|Description|
