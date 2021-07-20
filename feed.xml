@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-04-13T12:21:52.324Z</updated>
+    <updated>2021-07-20T07:24:23.752Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,31 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-07-19 17:00:37]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/20</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/20"/>
+        <updated>2021-07-19T16:19:34.000Z</updated>
+        <content type="html"><![CDATA[<p>I've decided to double down on my <code>tmux</code> fu by re-reading the man page and picking out groups of related commands that I can stick to my screen and practise when I remember.</p>
+<p>This week it's the set of commands related to panes. Here's what I have on my post-it note; they're all commands that are to be invoked following the prefix-key, and all relate to panes in the current window.</p>
+<p>|Command|Description|
+|-|-|
+|<code>o</code>|select the next pane|
+|<code>C-o</code>/<code>M-o</code>|rotate panes forwards / backwards|
+|<code>;</code>|move to the previously active pane
+|<code>!</code>|break the current pane out into a new window|
+|<code>m</code>/<code>M</code>|mark / unmark a pane|
+|<code>q</code>|briefly display the pane indices|
+|<code>x</code>|kill the current pane|
+|<code>z</code>|toggle the zoom state of the current pane|
+|<code>{</code>/<code>}</code>|swap the current pane with the previous / next one|
+|<code>M-1</code> to <code>M-5</code>|arrange panes in presets 1 through 5|
+|<code>space</code>|cycle through to next preset layout|</p>
+<p>I think having these commands written down, and then writing them down again in this journal entry, helps my mind assimilate them.</p>
+<p>I had to look up what "marking" a pane was all about - it's to mark a pane as the subject of a subsequent action. For example, you can identify a pane by marking it, and then using <code>join-pane</code> in another window to move that pane from where it was to the window you're now in. Like moving a window from one workspace to another, in the context of a window manager.</p>
+<p>Anyway, let's see how I get on. If I become more comfortable with these commands and remember to use them, I can move onto another group and repeat the learning process.</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-04-09 13:17:08 I've been thinking about field naming conventions …]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/19</id>

@@ -1,3 +1,34 @@
+## 2021-07-19 17:00:37
+I've decided to double down on my `tmux` fu by re-reading the man page and picking out groups of related commands that I can stick to my screen and practise when I remember.
+
+This week it's the set of commands related to panes. Here's what I have on my post-it note; they're all commands that are to be invoked following the prefix-key, and all relate to panes in the current window.
+
+|Command|Description|
+|-|-|
+|`o`|select the next pane|
+|`C-o`/`M-o`|rotate panes forwards / backwards|
+|`;`|move to the previously active pane
+|`!`|break the current pane out into a new window|
+|`m`/`M`|mark / unmark a pane|
+|`q`|briefly display the pane indices|
+|`x`|kill the current pane|
+|`z`|toggle the zoom state of the current pane|
+|`{`/`}`|swap the current pane with the previous / next one|
+|`M-1` to `M-5`|arrange panes in presets 1 through 5|
+|`space`|cycle through to next preset layout|
+
+I think having these commands written down, and then writing them down again in this journal entry, helps my mind assimilate them.
+
+I had to look up what "marking" a pane was all about - it's to mark a pane as the subject of a subsequent action. For example, you can identify a pane by marking it, and then using `join-pane` in another window to move that pane from where it was to the window you're now in. Like moving a window from one workspace to another, in the context of a window manager.
+
+Anyway, let's see how I get on. If I become more comfortable with these commands and remember to use them, I can move onto another group and repeat the learning process.
+
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/20)
+
+<hr>
+
 ## 2021-04-09 13:17:08 I've been thinking about field naming conventions …
 I've been thinking about field naming conventions today, after the pleasantly opinionated threads on Twitter.
 
