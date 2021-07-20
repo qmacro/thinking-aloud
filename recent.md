@@ -1,4 +1,4 @@
-## 2021-07-20 08:25:44
+## 2021-07-20 08:27:54
 I've decided to double down on my `tmux` fu by re-reading the man page and picking out groups of related commands that I can stick to my screen and practise when I remember.
 
 This week it's the set of commands related to panes. Here's what I have on my post-it note; they're all commands that are to be invoked following the prefix-key, and all relate to panes in the current window.
@@ -24,7 +24,7 @@ I had to look up what "marking" a pane was all about - it's to mark a pane as th
 Anyway, let's see how I get on. If I become more comfortable with these commands and remember to use them, I can move onto another group and repeat the learning process.
 
 
-[Discuss](https://github.com/qmacro/thinking-aloud/issues/21)
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/22)
 
 <hr>
 
