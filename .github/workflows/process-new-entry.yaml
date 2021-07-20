@@ -8,7 +8,7 @@ jobs:
   # First, generate the new feed XML and 'recent' content based on the issues list.
   generate:
     if: github.actor == github.repository_owner && contains(github.event.issue.labels.*.name, 'entry')
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2.3.4
