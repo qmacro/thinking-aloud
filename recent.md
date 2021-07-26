@@ -1,3 +1,45 @@
+## 2021-07-26 07:08:57
+I listened to a @betatalksnl podcast on a walk this morning with guest @irina_scurtu. The title of the episode is [10. Teaching developers & the importance of sharing knowledge, REST API and GraphQL - with Irina Scurtu](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xNjIyMjcyLnJzcw/episode/QnV6enNwcm91dC04ODYyMDY4) and it was an enjoyable 50 minutes. Here are a few items that I picked out, items that resonated with me and made me think some more:
+
+**The "Senior" prefix**
+
+The addition of the adjective "Senior" to a title, such as "Senior Developer". What does that imply? What _should_ that imply? The case was made for "Senior" to denote, to require, a degree of mentorship. Teaching, training, mentoring more junior colleagues as part of the role description. This gets us away from using the "Senior" prefix for pure longevity in the position.
+
+**Your knowledge tank**
+
+Irina, a teacher and educator, showed a strong degree of awareness with regards to how full or empty her knowledge tank is. That is such an underrated ability - first to even realise that this is even a thing, and second, to recognise when one's tank is running close to empty.
+
+Teaching and sharing is built on a foundation of knowledge, but that knowledge can become depleted, in a way, and certainly in our field it can become stale and lose relevance over time. And there's always new stuff to learn (and subsequently teach). Over the years I've come to recognise this empty tank; sometimes it takes me longer than it should for me to do anything about it, but I do, eventually.
+
+**APIs**
+
+This podcast episode covered teaching and sharing knowledge, but there was also a section on APIs, particularly REST, gRPC and GraphQL. Irina started to recount her experience in how folks failed to properly implement a RESTful approach in their API design, and I was expecting some references to the lack of HATEOAS and auto-navigable resources*, but I was somewhat dismayed to hear more fundamental crimes are being perpetrated:
+
+- adding action verbs to URLs (that are supposed to represent resources, not actions)
+- not using the HTTP methods appropriately
+- not even returning appropriate status codes
+
+This last point made me think of something I'd like to get put on my next nerdy custom tshirt:
+
+```
+200 NOT OK
+```
+
+Irina's thoughts on GraphQL made me smile, as they reflect my own, similar thoughts. GraphQL has arrived on the scene as a shiny new tool, and this is causing folks to want to use it ... for everything. Moreover, I'm seeing folks champion GraphQL because it lets them get just the data they want, rather than (as they maintain) "the kitchen sink" that they'd get with a REST or plain HTTP call.
+
+That is rather narrow thinking, and based on, I suspect, their possibly limited experience of what a good RESTful or HTTP based API looks like. There are a lot of bad API designs out there - that's the fault of the designer, not the fault of REST or HTTP. So I see a lot of folks [throwing the baby out with the bathwater](https://en.wikipedia.org/wiki/Don%27t_throw_the_baby_out_with_the_bathwater) because of this.
+
+What's more - and this was so wonderful to hear someone else (other than me) say this - _a lot of what GraphQL promises is already being delivered with OData_. I'll leave the explanation of that to another post, and instead leave you with a deliberately incendiary thought - GraphQL is OData, but in a far worse context, where processing and logic is pushed to the client, and the abuse of HTTP makes me categorise it in the same bucket as SOAP.
+
+Anyway, give the episode a listen, the [Beta Talks](https://twitter.com/betatalksnl) folks ask great questions, and [Irina](https://twitter.com/irina_scurtu) was a great guest.
+
+\*(I [recorded a podcast episode](https://anchor.fm/blog-cast/episodes/Ep-3-Kieran-Potts-Should-we-rebrand-REST-e12g3bi) for [Blog Cast](https://anchor.fm/blog-cast/), reading aloud Kieran Potts' [blog post of the same name](https://kieranpotts.com/rebranding-rest/) - I recommend this post or podcast for more information on this.)
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/26)
+
+<hr>
+
 ## 2021-07-20 08:42:14
 I've decided to double down on my `tmux` fu by re-reading the man page and picking out groups of related commands that I can stick to my screen and practise when I remember.
 

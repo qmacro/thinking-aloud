@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-07-20T07:42:36.252Z</updated>
+    <updated>2021-07-26T06:48:49.192Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,34 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-07-26 07:08:57]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/26</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/26"/>
+        <updated>2021-07-26T06:48:27.000Z</updated>
+        <content type="html"><![CDATA[<p>I listened to a @betatalksnl podcast on a walk this morning with guest @irina_scurtu. The title of the episode is <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xNjIyMjcyLnJzcw/episode/QnV6enNwcm91dC04ODYyMDY4">10. Teaching developers & the importance of sharing knowledge, REST API and GraphQL - with Irina Scurtu</a> and it was an enjoyable 50 minutes. Here are a few items that I picked out, items that resonated with me and made me think some more:</p>
+<p><strong>The "Senior" prefix</strong></p>
+<p>The addition of the adjective "Senior" to a title, such as "Senior Developer". What does that imply? What <em>should</em> that imply? The case was made for "Senior" to denote, to require, a degree of mentorship. Teaching, training, mentoring more junior colleagues as part of the role description. This gets us away from using the "Senior" prefix for pure longevity in the position.</p>
+<p><strong>Your knowledge tank</strong></p>
+<p>Irina, a teacher and educator, showed a strong degree of awareness with regards to how full or empty her knowledge tank is. That is such an underrated ability - first to even realise that this is even a thing, and second, to recognise when one's tank is running close to empty.</p>
+<p>Teaching and sharing is built on a foundation of knowledge, but that knowledge can become depleted, in a way, and certainly in our field it can become stale and lose relevance over time. And there's always new stuff to learn (and subsequently teach). Over the years I've come to recognise this empty tank; sometimes it takes me longer than it should for me to do anything about it, but I do, eventually.</p>
+<p><strong>APIs</strong></p>
+<p>This podcast episode covered teaching and sharing knowledge, but there was also a section on APIs, particularly REST, gRPC and GraphQL. Irina started to recount her experience in how folks failed to properly implement a RESTful approach in their API design, and I was expecting some references to the lack of HATEOAS and auto-navigable resources*, but I was somewhat dismayed to hear more fundamental crimes are being perpetrated:</p>
+<ul>
+<li>adding action verbs to URLs (that are supposed to represent resources, not actions)</li>
+<li>not using the HTTP methods appropriately</li>
+<li>not even returning appropriate status codes</li>
+</ul>
+<p>This last point made me think of something I'd like to get put on my next nerdy custom tshirt:</p>
+<pre><code>200 NOT OK
+</code></pre>
+<p>Irina's thoughts on GraphQL made me smile, as they reflect my own, similar thoughts. GraphQL has arrived on the scene as a shiny new tool, and this is causing folks to want to use it … for everything. Moreover, I'm seeing folks champion GraphQL because it lets them get just the data they want, rather than (as they maintain) "the kitchen sink" that they'd get with a REST or plain HTTP call.</p>
+<p>That is rather narrow thinking, and based on, I suspect, their possibly limited experience of what a good RESTful or HTTP based API looks like. There are a lot of bad API designs out there - that's the fault of the designer, not the fault of REST or HTTP. So I see a lot of folks <a href="https://en.wikipedia.org/wiki/Don%27t_throw_the_baby_out_with_the_bathwater">throwing the baby out with the bathwater</a> because of this.</p>
+<p>What's more - and this was so wonderful to hear someone else (other than me) say this - <em>a lot of what GraphQL promises is already being delivered with OData</em>. I'll leave the explanation of that to another post, and instead leave you with a deliberately incendiary thought - GraphQL is OData, but in a far worse context, where processing and logic is pushed to the client, and the abuse of HTTP makes me categorise it in the same bucket as SOAP.</p>
+<p>Anyway, give the episode a listen, the <a href="https://twitter.com/betatalksnl">Beta Talks</a> folks ask great questions, and <a href="https://twitter.com/irina_scurtu">Irina</a> was a great guest.</p>
+<p>*(I <a href="https://anchor.fm/blog-cast/episodes/Ep-3-Kieran-Potts-Should-we-rebrand-REST-e12g3bi">recorded a podcast episode</a> for <a href="https://anchor.fm/blog-cast/">Blog Cast</a>, reading aloud Kieran Potts' <a href="https://kieranpotts.com/rebranding-rest/">blog post of the same name</a> - I recommend this post or podcast for more information on this.)</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-07-20 08:42:14]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/25</id>
