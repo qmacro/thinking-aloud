@@ -40,7 +40,7 @@ Anyway, give the episode a listen, the [Beta Talks](https://twitter.com/betatalk
 
 <hr>
 
-## 2021-07-20 08:42:14
+## 2021-07-20 08:42:14 I've decided to double down on my tmux fu …
 I've decided to double down on my `tmux` fu by re-reading the man page and picking out groups of related commands that I can stick to my screen and practise when I remember.
 
 This week it's the set of commands related to panes. Here's what I have on my post-it note; they're all commands that are to be invoked following the prefix-key, and all relate to panes in the current window.

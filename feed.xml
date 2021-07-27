@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-07-26T06:48:49.192Z</updated>
+    <updated>2021-07-27T09:51:33.235Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -42,7 +42,7 @@
         <category label="entry"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021-07-20 08:42:14]]></title>
+        <title type="html"><![CDATA[2021-07-20 08:42:14 I've decided to double down on my tmux fu …]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/25</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/25"/>
         <updated>2021-07-20T07:42:20.000Z</updated>
