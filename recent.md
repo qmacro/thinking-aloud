@@ -1,4 +1,4 @@
-## 2021-07-26 07:08:57
+## 2021-07-26 07:08:57 I listened to a @betatalksnl podcast on a walk this morning …
 I listened to a @betatalksnl podcast on a walk this morning with guest @irina_scurtu. The title of the episode is [10. Teaching developers & the importance of sharing knowledge, REST API and GraphQL - with Irina Scurtu](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xNjIyMjcyLnJzcw/episode/QnV6enNwcm91dC04ODYyMDY4) and it was an enjoyable 50 minutes. Here are a few items that I picked out, items that resonated with me and made me think some more:
 
 **The "Senior" prefix**
