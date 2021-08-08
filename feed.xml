@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-07-27T09:51:59.674Z</updated>
+    <updated>2021-08-08T20:28:47.512Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,38 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-08-08 21:28:34 reRedpoing Revisiting my tmux workflow and hou]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/28</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/28"/>
+        <updated>2021-08-08T20:28:35.000Z</updated>
+        <content type="html"><![CDATA[<p>I've been learning lots about <code>tmux</code> over the last few days, both from long time friend Rob Muhlestein and latterly from Waylon Walker. So much so that I am at the state where I want to refresh my workflow which is based upon it. New and improved key bindings, better use of sessions, and looking at employing popups, a new feature introduced with <code>tmux</code> version 3.2.</p>
+<p>I'm writing this journal entry within a popup; I've re-jigged the <code>j</code> function to become a more fully fledged <code>journal</code> script that I can then invoke with a key binding in <code>tmux</code>, which will then launch the script in a popup, like this:</p>
+<pre><code class="bash language-bash">tmux display-popup -E journal
+</code></pre>
+<p>The <code>journal</code> script is still very raw (I'm even writing it on a machine that doesn't have <code>shellcheck</code> installed yet, shame on me) but this is what it looks like so far:</p>
+<pre><code class="bash language-bash">#!/usr/bin/env bash
+
+declare tmpfile repo title
+tmpfile=$(mktemp /tmp/journal.XXXXXX)
+repo="$HOME/Projects/gh/github.com/qmacro/thinking-aloud"
+
+vim "$tmpfile"\
+&amp;&amp; cd "$repo" \
+&amp;&amp; echo -n "Title? " \
+&amp;&amp; read title \
+&amp;&amp; [ -n "$title" ] \
+&amp;&amp; gh issue create \
+ --label entry \
+ --title "$(date '+%Y-%m-%d %H:%M:%S') $title" \
+ --body-file "$tmpfile"
+</code></pre>
+<p>So for those who have seen how I've created journal entries thus far, the main difference here is that I'm opening up the editor <em>first</em>, then asking for a journal title, and only if I get both do I use <code>gh issue create</code> as I have been doing already (but this time, taking the issue body from the temporary file I've just created and edited).</p>
+<p>I've just realised I should clean up that <code>$tmpfile</code> too. By the time this script hits my dotfiles repo, I'll have added that, and also tidied it up a bit more.</p>
+<p>I like the idea of writing a journal entry in a modal popup; I'm pondering whether I should do it in the context of a (new) <code>tmux</code> session, so I can switch back into a half-written journal entry later, but I also like the idea that a journal entry should be short - certainly short enough for a single popup session. So that's what I'm doing right now.</p>
+<p>Let's see how it goes.</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-07-26 07:08:57 I listened to a @betatalksnl podcast on a walk this morning …]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/26</id>

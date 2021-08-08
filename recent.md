@@ -1,3 +1,45 @@
+## 2021-08-08 21:28:34 reRedpoing Revisiting my tmux workflow and hou
+I've been learning lots about `tmux` over the last few days, both from long time friend Rob Muhlestein and latterly from Waylon Walker. So much so that I am at the state where I want to refresh my workflow which is based upon it. New and improved key bindings, better use of sessions, and looking at employing popups, a new feature introduced with `tmux` version 3.2.
+
+I'm writing this journal entry within a popup; I've re-jigged the `j` function to become a more fully fledged `journal` script that I can then invoke with a key binding in `tmux`, which will then launch the script in a popup, like this:
+
+```bash
+tmux display-popup -E journal
+```
+
+The `journal` script is still very raw (I'm even writing it on a machine that doesn't have `shellcheck` installed yet, shame on me) but this is what it looks like so far:
+
+```bash
+#!/usr/bin/env bash
+
+declare tmpfile repo title
+tmpfile=$(mktemp /tmp/journal.XXXXXX)
+repo="$HOME/Projects/gh/github.com/qmacro/thinking-aloud"
+
+vim "$tmpfile"\
+&& cd "$repo" \
+&& echo -n "Title? " \
+&& read title \
+&& [ -n "$title" ] \
+&& gh issue create \
+ --label entry \
+ --title "$(date '+%Y-%m-%d %H:%M:%S') $title" \
+ --body-file "$tmpfile"
+```
+
+So for those who have seen how I've created journal entries thus far, the main difference here is that I'm opening up the editor _first_, then asking for a journal title, and only if I get both do I use `gh issue create` as I have been doing already (but this time, taking the issue body from the temporary file I've just created and edited).
+
+I've just realised I should clean up that `$tmpfile` too. By the time this script hits my dotfiles repo, I'll have added that, and also tidied it up a bit more.
+
+I like the idea of writing a journal entry in a modal popup; I'm pondering whether I should do it in the context of a (new) `tmux` session, so I can switch back into a half-written journal entry later, but I also like the idea that a journal entry should be short - certainly short enough for a single popup session. So that's what I'm doing right now.
+
+Let's see how it goes.
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/28)
+
+<hr>
+
 ## 2021-07-26 07:08:57 I listened to a @betatalksnl podcast on a walk this morning …
 I listened to a @betatalksnl podcast on a walk this morning with guest @irina_scurtu. The title of the episode is [10. Teaching developers & the importance of sharing knowledge, REST API and GraphQL - with Irina Scurtu](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xNjIyMjcyLnJzcw/episode/QnV6enNwcm91dC04ODYyMDY4) and it was an enjoyable 50 minutes. Here are a few items that I picked out, items that resonated with me and made me think some more:
 
