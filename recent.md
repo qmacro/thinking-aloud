@@ -1,4 +1,4 @@
-## 2021-08-08 21:28:34 reRedpoing Revisiting my tmux workflow and hou
+## 2021-08-08 21:28:34 Revisiting my tmux workflow and journalling
 I've been learning lots about `tmux` over the last few days, both from long time friend Rob Muhlestein and latterly from Waylon Walker. So much so that I am at the state where I want to refresh my workflow which is based upon it. New and improved key bindings, better use of sessions, and looking at employing popups, a new feature introduced with `tmux` version 3.2.
 
 I'm writing this journal entry within a popup; I've re-jigged the `j` function to become a more fully fledged `journal` script that I can then invoke with a key binding in `tmux`, which will then launch the script in a popup, like this:
