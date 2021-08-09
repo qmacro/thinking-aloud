@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-08-08T20:29:31.322Z</updated>
+    <updated>2021-08-09T06:42:15.327Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,14 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-08-09 07:41:52 Demo journal entry]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/29</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/29"/>
+        <updated>2021-08-09T06:41:53.000Z</updated>
+        <content type="html"><![CDATA[<p>This is a demo journal entry, created within a popup in tmux.</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-08-08 21:28:34 Revisiting my tmux workflow and journalling]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/28</id>

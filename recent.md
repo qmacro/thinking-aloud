@@ -1,3 +1,11 @@
+## 2021-08-09 07:41:52 Demo journal entry
+This is a demo journal entry, created within a popup in tmux.
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/29)
+
+<hr>
+
 ## 2021-08-08 21:28:34 Revisiting my tmux workflow and journalling
 I've been learning lots about `tmux` over the last few days, both from long time friend Rob Muhlestein and latterly from Waylon Walker. So much so that I am at the state where I want to refresh my workflow which is based upon it. New and improved key bindings, better use of sessions, and looking at employing popups, a new feature introduced with `tmux` version 3.2.
 
