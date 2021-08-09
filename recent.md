@@ -1,8 +1,10 @@
-## 2021-08-09 07:41:52 Demo journal entry
-This is a demo journal entry, created within a popup in tmux.
+## 2021-08-09 11:51:29 Demo journal creation in tmux popup
+Here's an example of writing a new journal entry, invoked from the tmux binding "prefix M-j", in a popup window.
+
+I'll record with asciinema (I need to fix that vim hack) and share it online.
 
 
-[Discuss](https://github.com/qmacro/thinking-aloud/issues/29)
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/30)
 
 <hr>
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-08-09T06:42:15.327Z</updated>
+    <updated>2021-08-09T10:51:45.217Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -14,11 +14,12 @@
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
     <entry>
-        <title type="html"><![CDATA[2021-08-09 07:41:52 Demo journal entry]]></title>
-        <id>https://github.com/qmacro/thinking-aloud/issues/29</id>
-        <link href="https://github.com/qmacro/thinking-aloud/issues/29"/>
-        <updated>2021-08-09T06:41:53.000Z</updated>
-        <content type="html"><![CDATA[<p>This is a demo journal entry, created within a popup in tmux.</p>]]></content>
+        <title type="html"><![CDATA[2021-08-09 11:51:29 Demo journal creation in tmux popup]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/30</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/30"/>
+        <updated>2021-08-09T10:51:30.000Z</updated>
+        <content type="html"><![CDATA[<p>Here's an example of writing a new journal entry, invoked from the tmux binding "prefix M-j", in a popup window.</p>
+<p>I'll record with asciinema (I need to fix that vim hack) and share it online.</p>]]></content>
         <category label="entry"/>
     </entry>
     <entry>
