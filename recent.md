@@ -3,7 +3,10 @@ Here's an example of writing a new journal entry, invoked from the tmux binding 
 
 I'll record with asciinema (I need to fix that vim hack) and share it online.
 
-[![asciicast](https://asciinema.org/a/429621.svg)](https://asciinema.org/a/429621)
+![journal](https://user-images.githubusercontent.com/73068/128700002-5403c26c-5d2c-419e-a1c9-d7b061c9c31d.gif)
+
+
+Asciinema link ☞ https://asciinema.org/a/429621
 
 [Discuss](https://github.com/qmacro/thinking-aloud/issues/30)
 
