@@ -5,7 +5,7 @@ I'm travelling to Frankfurt, to work on some SAP TechEd preparations (we're doin
 
 I've spent the entirety of my working life in the SAP ecosphere, since leaving University in 1987 and joining Esso in London, where I started to work on a project implementing SAP R/2 4.1. Throughout that working life I've travelled as a consultant, as a contractor, as an employee of customers and of partners, and I can say without hesitation that I've "done enough" travelling, at least for work.
 
-There was one time where I flew four times a week, a practice that took me, as a contractor working for a large consultancy, to SAP customers in Europe and beyond. There was another time, when I was employed as a consultant for an SAP partner, that I more or less commuted between Manchester and Fort Worth, Texas. That was rather extreme, but it still happened.
+There was one period of around 7 years where I flew at least twice -- sometimes four times -- every week, a practice that took me, as a contractor working for a large consultancy, to SAP customers in Europe and beyond. There was another time, when I was employed as a consultant for an SAP partner, that I more or less commuted between Manchester and Fort Worth, Texas. That was rather extreme, but it still happened.
 
 Before joining SAP as an employee in 2018, most of my working weeks involved travel but by train, within the UK. I enjoyed that immensely, regardless of the pressures I might have been under at the time in relation to whatever project I was involved in. And that enjoyment is still with me, when it comes to train journeys.
 
