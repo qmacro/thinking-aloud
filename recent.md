@@ -1,8 +1,8 @@
-## 2021-11-05 09:44:53 Quick test
-this is a test
+## 2021-11-05 09:50:15 Test 2
+Another quick test
 
 
-[Discuss](https://github.com/qmacro/thinking-aloud/issues/31)
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/32)
 
 <hr>
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-11-05T09:45:15.925Z</updated>
+    <updated>2021-11-05T09:50:48.211Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -14,11 +14,11 @@
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
     <entry>
-        <title type="html"><![CDATA[2021-11-05 09:44:53 Quick test]]></title>
-        <id>https://github.com/qmacro/thinking-aloud/issues/31</id>
-        <link href="https://github.com/qmacro/thinking-aloud/issues/31"/>
-        <updated>2021-11-05T09:44:54.000Z</updated>
-        <content type="html"><![CDATA[<p>this is a test</p>]]></content>
+        <title type="html"><![CDATA[2021-11-05 09:50:15 Test 2]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/32</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/32"/>
+        <updated>2021-11-05T09:50:16.000Z</updated>
+        <content type="html"><![CDATA[<p>Another quick test</p>]]></content>
         <category label="entry"/>
     </entry>
     <entry>
