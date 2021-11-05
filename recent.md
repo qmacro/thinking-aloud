@@ -1,3 +1,11 @@
+## 2021-11-05 09:44:53 Quick test
+this is a test
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/31)
+
+<hr>
+
 ## 2021-08-09 11:51:29 Demo journal creation in tmux popup
 Here's an example of writing a new journal entry, invoked from the tmux binding "prefix M-j", in a popup window.
 
