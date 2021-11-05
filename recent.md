@@ -1,8 +1,20 @@
-## 2021-11-05 09:50:15 Test 2
-Another quick test
+## 2021-11-05 10:39:42 Starting my journey to Frankfurt for SAP TechEd
+I'm travelling for work for the first time since lockdown started. I'm quite happy working quietly from home, but this is a welcome break from that, especially given the circumstances and context.
+
+I'm travelling to Frankfurt, to work on some SAP TechEd preparations (we're doing another Developer Keynote this year) and I'm going by train. First, it's better for the planet, but second, I enjoy it a whole lot more. Most of all though, I'm going to get to see my son Joseph who's in Duesseldorf. It's been over a year since I saw him last and it will be brilliant to see him and hug him.
+
+I've spent the entirety of my working life in the SAP ecosphere, since leaving University in 1987 and joining Esso in London, where I started to work on a project implementing SAP R/2 4.1. Throughout that working life I've travelled as a consultant, as a contractor, as an employee of customers and of partners, and I can say without hesitation that I've "done enough" travelling, at least for work.
+
+There was one time where I flew four times a week, a practice that took me, as a contractor working for a large consultancy, to SAP customers in Europe and beyond. There was another time, when I was employed as a consultant for an SAP partner, that I more or less commuted between Manchester and Fort Worth, Texas. That was rather extreme, but it still happened.
+
+Before joining SAP as an employee in 2018, most of my working weeks involved travel but by train, within the UK. I enjoyed that immensely, regardless of the pressures I might have been under at the time in relation to whatever project I was involved in. And that enjoyment is still with me, when it comes to train journeys.
+
+So here I am, taking the train from Manchester Piccadilly to London Euston, the first main part of my journey. When I arrive in London I'll make my way over to St Pancras station where I'll take the Eurostar to Brussels. That's coming up, and I'm looking forward to that too.
+
+Right, it's now time to walk down the train to pick up a cup of tea. Until next time.
 
 
-[Discuss](https://github.com/qmacro/thinking-aloud/issues/32)
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/33)
 
 <hr>
 
