@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-12-01T08:48:57.527Z</updated>
+    <updated>2021-12-01T09:43:46.846Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -18,7 +18,7 @@
         <id>https://github.com/qmacro/thinking-aloud/issues/34</id>
         <link href="https://github.com/qmacro/thinking-aloud/issues/34"/>
         <updated>2021-12-01T08:48:34.000Z</updated>
-        <content type="html"><![CDATA[<p>I've been thinking recently about what name to use for something. That somethig is a piece of JSON. A JSON "thing". These thoughts have become more frequent as I've been digging deeper into <code>jq</code>, the command line JSON processor.</p>
+        <content type="html"><![CDATA[<p>I've been thinking recently about what name to use for something. That something is a piece of JSON. A JSON "thing". These thoughts have become more frequent as I've been digging deeper into <code>jq</code>, the command line JSON processor.</p>
 <p><code>jq</code> will accept a piece of JSON and process it as expected. But it will also accept multiple, err, pieces, and process them in sequence. Why is this important? Well, lists of such JSON pieces are common in various APIs that emit data represented in records, records that have potentially complex structure beyond just a list of fields. And often these records are represented as JSON objects.</p>
 <p>There's even a recognised format for this type of "records of JSON" data, and that is <a href="http://ndjson.org/">ndjson</a> - "newline-delimited JSON". This makes a lot of sense, and also lends itself to streaming APIs and pipelines, where individual JSON objects can be emitted as and when ready, as self-contained records, one at a time.</p>
 <p>However these pieces are sometimes something other than JSON objects (JSON objects are recognisable by the enclosing braces, like this: <code>{ ... }</code>). They could be JSON arrays, which are recognisable by the enclosing square brackets: <code>[ ... ]</code>.</p>

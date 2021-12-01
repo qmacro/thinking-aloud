@@ -1,5 +1,5 @@
 ## 2021-12-01 08:48:33 Valid JSON and what to call each piece?
-I've been thinking recently about what name to use for something. That somethig is a piece of JSON. A JSON "thing". These thoughts have become more frequent as I've been digging deeper into `jq`, the command line JSON processor.
+I've been thinking recently about what name to use for something. That something is a piece of JSON. A JSON "thing". These thoughts have become more frequent as I've been digging deeper into `jq`, the command line JSON processor.
 
 `jq` will accept a piece of JSON and process it as expected. But it will also accept multiple, err, pieces, and process them in sequence. Why is this important? Well, lists of such JSON pieces are common in various APIs that emit data represented in records, records that have potentially complex structure beyond just a list of fields. And often these records are represented as JSON objects.
 
