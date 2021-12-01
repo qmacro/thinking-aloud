@@ -1,3 +1,30 @@
+## 2021-12-01 08:48:33 Valid JSON and what to call each piece?
+I've been thinking recently about what name to use for something. That somethig is a piece of JSON. A JSON "thing". These thoughts have become more frequent as I've been digging deeper into `jq`, the command line JSON processor.
+
+`jq` will accept a piece of JSON and process it as expected. But it will also accept multiple, err, pieces, and process them in sequence. Why is this important? Well, lists of such JSON pieces are common in various APIs that emit data represented in records, records that have potentially complex structure beyond just a list of fields. And often these records are represented as JSON objects.
+
+There's even a recognised format for this type of "records of JSON" data, and that is [ndjson](http://ndjson.org/) - "newline-delimited JSON". This makes a lot of sense, and also lends itself to streaming APIs and pipelines, where individual JSON objects can be emitted as and when ready, as self-contained records, one at a time.
+
+However these pieces are sometimes something other than JSON objects (JSON objects are recognisable by the enclosing braces, like this: `{ ... }`). They could be JSON arrays, which are recognisable by the enclosing square brackets: `[ ... ]`.
+
+What's going to make you sit up and take a double gulp of coffee, perhaps, is that while we can agree or at least guess that an object `{ ... }` or array `[ ... ]` is valid JSON, there are other values that are valid too. A double-quoted string is valid JSON. A number is valid JSON. Even the following values are valid JSON: `true`, `false` and `null`. And by "valid JSON" I mean they could be alone in a file with a 'JSON' extension, or returned in an HTTP response, with `application/json` as the declared content type, and everything would be well with the world.
+
+Getting back to my conundrum - what to call individual JSON "pieces"? Well, I gave myself a clue just then - the following are all valid JSON values:
+
+* an object
+* an array
+* a string
+* a number
+* a boolean
+* null
+
+So it makes complete sense to me to use the word "value" to refer to a piece, a lump, a stanza, of JSON. A JSON **value**. That's the ticket!
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/34)
+
+<hr>
+
 ## 2021-11-05 10:39:42 Starting my journey to Frankfurt for SAP TechEd
 I'm travelling for work for the first time since lockdown started. I'm quite happy working quietly from home, but this is a welcome break from that, especially given the circumstances and context.
 

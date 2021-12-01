@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-11-05T11:19:47.189Z</updated>
+    <updated>2021-12-01T08:48:57.527Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,28 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-12-01 08:48:33 Valid JSON and what to call each piece?]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/34</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/34"/>
+        <updated>2021-12-01T08:48:34.000Z</updated>
+        <content type="html"><![CDATA[<p>I've been thinking recently about what name to use for something. That somethig is a piece of JSON. A JSON "thing". These thoughts have become more frequent as I've been digging deeper into <code>jq</code>, the command line JSON processor.</p>
+<p><code>jq</code> will accept a piece of JSON and process it as expected. But it will also accept multiple, err, pieces, and process them in sequence. Why is this important? Well, lists of such JSON pieces are common in various APIs that emit data represented in records, records that have potentially complex structure beyond just a list of fields. And often these records are represented as JSON objects.</p>
+<p>There's even a recognised format for this type of "records of JSON" data, and that is <a href="http://ndjson.org/">ndjson</a> - "newline-delimited JSON". This makes a lot of sense, and also lends itself to streaming APIs and pipelines, where individual JSON objects can be emitted as and when ready, as self-contained records, one at a time.</p>
+<p>However these pieces are sometimes something other than JSON objects (JSON objects are recognisable by the enclosing braces, like this: <code>{ ... }</code>). They could be JSON arrays, which are recognisable by the enclosing square brackets: <code>[ ... ]</code>.</p>
+<p>What's going to make you sit up and take a double gulp of coffee, perhaps, is that while we can agree or at least guess that an object <code>{ ... }</code> or array <code>[ ... ]</code> is valid JSON, there are other values that are valid too. A double-quoted string is valid JSON. A number is valid JSON. Even the following values are valid JSON: <code>true</code>, <code>false</code> and <code>null</code>. And by "valid JSON" I mean they could be alone in a file with a 'JSON' extension, or returned in an HTTP response, with <code>application/json</code> as the declared content type, and everything would be well with the world.</p>
+<p>Getting back to my conundrum - what to call individual JSON "pieces"? Well, I gave myself a clue just then - the following are all valid JSON values:</p>
+<ul>
+<li>an object</li>
+<li>an array</li>
+<li>a string</li>
+<li>a number</li>
+<li>a boolean</li>
+<li>null</li>
+</ul>
+<p>So it makes complete sense to me to use the word "value" to refer to a piece, a lump, a stanza, of JSON. A JSON <strong>value</strong>. That's the ticket!</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-11-05 10:39:42 Starting my journey to Frankfurt for SAP TechEd]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/33</id>
