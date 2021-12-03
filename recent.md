@@ -1,3 +1,26 @@
+## 2021-12-03 13:46:58 Fast, Elegant, Instructive - Pick One #AdventOfCode
+I'm intentionally only dabbling in [this year's Advent of Code](https://adventofcode.com/2021) because I know that the puzzles will get harder over the month, so much so that I won't have the time to dedicate to solving them.
+
+This approach has at least given me the "excuse" to just use whatever technique or language I feel like to solve the puzzles. I tried a bit of APL for day 1, used Bash for day 2, and have used standard JavaScript (rather than, say, [Ramda-flavoured](https://ramdajs.com)) for day 3. Moreover, I won't feel as guilty if I don't solve day 4. Then again, I'm on a private leaderboard and can't help seeing what others are up to, and feeling some competition and pressure!
+
+Anyway, I realised the eternal dilemma I face during December because of Advent of Code and it's similar to what we know from "Fast, Cheap, Good - Pick Two". This version is "Fast, Elegant, Instructive - Pick One". In other words, my small brain allows me to solve a puzzle in only one of these modes:
+
+* fast: just getting it done quick (and most likely dirty)
+* elegant: writing something tidy, that I could show to others
+* instructive: using the puzzle to learn something new, either in a new language (especially if it's from a different [descendant](https://madhadron.com/posts/seven_languages.html)), or a new technique
+
+![Fast, Elegant, Instructive - pick one](https://pbs.twimg.com/media/FFr3RxZWUAMBGkO?format=jpg&name=medium)
+
+Do you feel the same?
+
+
+
+
+
+[Discuss](https://github.com/qmacro/thinking-aloud/issues/35)
+
+<hr>
+
 ## 2021-12-01 08:48:33 Valid JSON and what to call each piece?
 I've been thinking recently about what name to use for something. That something is a piece of JSON. A JSON "thing". These thoughts have become more frequent as I've been digging deeper into `jq`, the command line JSON processor.
 
