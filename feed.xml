@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/qmacro/thinking-aloud</id>
     <title>Thinking Aloud</title>
-    <updated>2021-12-03T13:47:17.469Z</updated>
+    <updated>2021-12-23T15:31:51.261Z</updated>
     <generator>NPM module feed (https://www.npmjs.com/package/feed)</generator>
     <author>
         <name>DJ Adams</name>
@@ -13,6 +13,30 @@
     <link rel="self" href="https://github.com/qmacro/thinking-aloud"/>
     <subtitle>A journal</subtitle>
     <rights>DJ Adams</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-12-23 15:31:30 Owning one's words, blogging, group chat and Docker]]></title>
+        <id>https://github.com/qmacro/thinking-aloud/issues/36</id>
+        <link href="https://github.com/qmacro/thinking-aloud/issues/36"/>
+        <updated>2021-12-23T15:31:31.000Z</updated>
+        <content type="html"><![CDATA[<p>Different things have been colliding in my head about owning one's own words, decentralisation, group chat and Docker.</p>
+<p>Today in a coffee break I read a few posts, including the classic <a href="https://www.hanselman.com/blog/your-words-are-wasted">Your words are wasted</a> by Scott Hanselman, and <a href="http://www.tbray.org/ongoing/When/201x/2012/08/18/Blogodammerung">Blogodammerung</a> by Tim Bray. Both written in 2012 but just as relevant today, if not more. I also read and commented in a <a href="https://twitter.com/ceedee666/status/1473923174261829634">Twitter thread started by Christian Drumm</a> on the search for a usable discussion forum platform.</p>
+<p>There may be an element of rose-tinted spectacles here, but I'm minded to think that communication and content on the Internet (yes, the Internet, not just the Web) was better in the past. Better in a number of ways:</p>
+<ul>
+<li>we blogged more, article-length and longer-form content</li>
+<li>we managed references to and comments on those blog posts and articles</li>
+<li>we owned our own words by blogging on platforms that we owned or built</li>
+<li>group conversation was supported by protocols that allowed us to choose our own clients</li>
+<li>group conversation felt also more … asynchronous</li>
+</ul>
+<p>Regarding group conversation - I'm thinking of mailing lists, where threaded conversation was the norm, and we all enjoyed participating from the comfort of our choice of email clients (not to mention the simplicity and focus of plain text email rather than the monstrous HTML based email that people can't seem to live without). I'm also thinking of Usenet, via the Network News Transfer Protocol (NNTP) which served a similar but different purpose but had the same ideas.</p>
+<p>And then there's microblogging - I was a user of "identi.ca" before Twitter came along, and I resisted joining Twitter for a while because of the appeal of "identi.ca"'s decentralised approach (I eventually succumbed in <a href="https://twitter.com/qmacro">January 2007</a>).</p>
+<p>Talking of decentralisation - how can one not mention instant messaging here, and the wonderful Extensible Messaging and Presence Protocol (XMPP) (neé Jabber)? One could run one's own XMPP server, and control one's own identity, participating in a federated set of connections.</p>
+<p>What's happened? Has independence and content ownership lost out to commercialism and centralisation? I'm not going to try to answer that, but instead, have a question to ponder.</p>
+<p>What would it take to set up a starter set of tools, of clients and federated server mechanisms, in one or more coordinated Docker images, for individuals to pull, run and manage? It's not a magic bullet - some of the non-trivial challenges are in the area of connectivity and server persistence (where should the Docker containers run for long-lived lifetimes, for example?).</p>
+<p>In my blog post from earlier today I showed the output from <code>docker ps</code> running against the Docker context provided by the engine in <a href="https://www.google.com/search?q=site%3Aqmacro.org+synology">my Synology NAS</a>. In that output you can see that I'm just beginning to scratch the surface of older tools wrapped up in Docker - Weechat (an IRC client) being one of them. What might the next level of containerised tools (and federated servers) look like?</p>
+<p>It might be a pipedream, but definitely worth thinking about. I for one would love to see more folks owning their own words, blogging on platforms they control, connecting as they see fit while disconnecting from the large centralised commercial organisations.</p>]]></content>
+        <category label="entry"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-12-03 13:46:58 Fast, Elegant, Instructive - Pick One #AdventOfCode]]></title>
         <id>https://github.com/qmacro/thinking-aloud/issues/35</id>
