@@ -21,7 +21,7 @@ What's happened? Has independence and content ownership lost out to commercialis
 
 What would it take to set up a starter set of tools, of clients and federated server mechanisms, in one or more coordinated Docker images, for individuals to pull, run and manage? It's not a magic bullet - some of the non-trivial challenges are in the area of connectivity and server persistence (where should the Docker containers run for long-lived lifetimes, for example?).
 
-In my blog post from earlier today I showed the output from `docker ps` running against the Docker context provided by the engine in [my Synology NAS](https://www.google.com/search?q=site%3Aqmacro.org+synology). In that output you can see that I'm just beginning to scratch the surface of older tools wrapped up in Docker - Weechat (an IRC client) being one of them. What might the next level of containerised tools (and federated servers) look like?
+In my blog post from earlier today ([Truncation and neat terminal output](https://www.google.com/search?q=site%3Aqmacro.org+synology)) I showed the output from `docker ps` running against the Docker context provided by the engine in [my Synology NAS](https://www.google.com/search?q=site%3Aqmacro.org+synology). In that output you can see that I'm just beginning to scratch the surface of older tools wrapped up in Docker - Weechat (an IRC client) being one of them. What might the next level of containerised tools (and federated servers) look like?
 
 It might be a pipedream, but definitely worth thinking about. I for one would love to see more folks owning their own words, blogging on platforms they control, connecting as they see fit while disconnecting from the large centralised commercial organisations.
 
